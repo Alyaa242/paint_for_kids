@@ -83,7 +83,8 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_RECT] = "images\\MenuItems\\Menu_Rect.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Menu_Exit.jpg";
 	MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Phase1 - Code F23\\png-transparent-rectangle-shape-rectangle-purple-blue-angle.jpg";
-	
+	MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Phase1 - Code F23\\png-transparent-rectangle-shape-rectangle-purple-blue-angle.jpg";
+
 	//TODO: Prepare images for each menu item and add it to the list
 
 	//Draw menu item one image at a time
