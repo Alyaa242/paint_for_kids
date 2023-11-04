@@ -25,8 +25,8 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 
 	ITM_EXIT,	//Exit item
 	
-	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
-	
+	DRAW_ITM_COUNT	,	//no. of menu items ==> This should be the last line in this enum
+	ITM_SWITCH  /*++++++++*/
 };
 
 enum PlayMenuItem //The items of the Play menu (you should add more items)
@@ -39,9 +39,6 @@ enum PlayMenuItem //The items of the Play menu (you should add more items)
 	PLAY_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 	
 };
-
-
-
 
 
 __declspec(selectany) //This line to prevent "redefinition error"
