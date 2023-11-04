@@ -82,8 +82,8 @@ void Output::CreateDrawToolBar() const
 	string MenuItemImages[DRAW_ITM_COUNT];
 	MenuItemImages[ITM_RECT] = "images\\MenuItems\\Menu_Rect.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Menu_Exit.jpg";
-	MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Phase1 - Code F23\\png-transparent-rectangle-shape-rectangle-purple-blue-angle.jpg";
-	MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Phase1 - Code F23\\png-transparent-rectangle-shape-rectangle-purple-blue-angle.jpg";
+	MenuItemImages[ITM_CIRC] = "images\\MenuItems\\png-transparent-rectangle-shape-rectangle-purple-blue-angle.jpg";
+	
 
 	//TODO: Prepare images for each menu item and add it to the list
 
@@ -144,26 +144,115 @@ int Output::getCrntPenWidth() const		//get current pen width
 void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) const
 {
 	color DrawingClr;
-	if(selected)	
+	if (selected)
 		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
-	else			
+	else
 		DrawingClr = RectGfxInfo.DrawClr;
-	
-	pWind->SetPen(DrawingClr,1);
+
+	pWind->SetPen(DrawingClr, 1);
 	drawstyle style;
-	if (RectGfxInfo.isFilled)	
+	if (RectGfxInfo.isFilled)
 	{
-		style = FILLED;		
+		style = FILLED;
 		pWind->SetBrush(RectGfxInfo.FillClr);
 	}
-	else	
+	else
 		style = FRAME;
 
-	
+
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
-	
+
 }
 
+void Output::DrawSquare(Point p, GfxInfo SquareGfxInfo, bool selected)const
+{
+	color DrawingClr;
+	int sideLenght = 100;
+	if (selected)
+		DrawingClr = UI.HighlightColor;
+	else
+		DrawingClr = SquareGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (SquareGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(SquareGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+	pWind->DrawRectangle(p.x - sideLenght, p.y - sideLenght, p.x + sideLenght, p.y + sideLenght, style);
+}
+void Output::DrawTriangle(Point p1, Point p2, Point p3, GfxInfo TriangleGfxInfo, bool selected)const
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor;
+	else
+		DrawingClr = TriangleGfxInfo.DrawClr;
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (TriangleGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(TriangleGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+	pWind->DrawTriangle(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, style);
+}
+
+void Output::DrawHexagon(Point p, GfxInfo HexagonGfxInfo, bool selected)const
+{
+	const int vertices = 6;
+	int sideLenght = 100;
+	const int xvalues[vertices] = { p.x + sideLenght / 2,p.x + sideLenght,p.x + sideLenght / 2,p.x - sideLenght / 2,p.x - sideLenght,p.x - sideLenght / 2 };
+	const int yvalues[vertices] = { p.y + (sideLenght / 2) * sqrt(3),p.y,p.y - (sideLenght / 2) * sqrt(3),p.y - (sideLenght / 2) * sqrt(3),p.y,p.y + (sideLenght / 2) * sqrt(3) };
+
+
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor;
+	else
+		DrawingClr = HexagonGfxInfo.DrawClr;
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (HexagonGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(HexagonGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+
+	pWind->DrawPolygon(xvalues, yvalues, vertices, style);
+
+}
+void Output::DrawCircle(Point Pc, Point P, GfxInfo CircleGfxInfo, bool selected)const
+{
+	int radius = sqrt(pow(Pc.x - P.x, 2) + pow(Pc.y - P.y, 2));
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor;
+	else
+		DrawingClr = CircleGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (CircleGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(CircleGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+
+
+
+	pWind->DrawCircle(Pc.x, Pc.y, radius, style);
+
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 Output::~Output()
