@@ -48,7 +48,12 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_SAVE,
 	ITM_EXIT,	//Exit item
 	
+<<<<<<< Updated upstream
 	DRAW_ITM_COUNT,	//no. of menu items ==> This should be the last line in this enum  
+=======
+	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
+	
+>>>>>>> Stashed changes
 };
 
 enum PlayMenuItem //The items of the Play menu (you should add more items)
@@ -58,7 +63,16 @@ enum PlayMenuItem //The items of the Play menu (you should add more items)
 	
 	//TODO: Add more items names here
 
-	PLAY_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
+	
+	ITM_PICK_BY_FIGURE,
+	ITM_PICK_BY_COLOR,
+	ITM_PAUSE,
+	ITM_SWITCH,
+
+	PLAY_ITM_COUNT //no. of menu items ==> This should be the last line in this enum
+	
+
+
 	
 };
 
@@ -72,9 +86,17 @@ struct UI_Info	//User Interface Info.
 	int	width, height,	    //Window width and height
 		wx, wy,			//Window starting coordinates
 		StatusBarHeight,	//Status Bar Height
+<<<<<<< Updated upstream
 		ToolBarHeight;	//Tool Bar Height (distance from top of window to bottom line of toolbar)
 	double MenuItemWidth;		//Width of each item in toolbar menu
 	
+=======
+		ToolBarHeight,		//Tool Bar Height (distance from top of window to bottom line of toolbar)
+
+
+		MenuItemWidth;		//Width of each item in toolbar menu
+	    
+>>>>>>> Stashed changes
 
 	color DrawColor;		//Drawing color
 	color FillColor;		//Filling color

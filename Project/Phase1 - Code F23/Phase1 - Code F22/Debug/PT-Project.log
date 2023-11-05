@@ -1,5 +1,6 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   Output.cpp
+<<<<<<< Updated upstream
 D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(117,64): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
 D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(117,40): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
 D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
@@ -12,3 +13,15 @@ D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code
 D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
 D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(259,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
+=======
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  PT-Project.vcxproj -> C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
+>>>>>>> Stashed changes
