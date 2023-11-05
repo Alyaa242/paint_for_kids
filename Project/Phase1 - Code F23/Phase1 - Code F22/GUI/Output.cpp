@@ -80,6 +80,8 @@ void Output::CreateDrawToolBar() const
 	//To control the order of these images in the menu, 
 	//reoder them in UI_Info.h ==> enum DrawMenuItem
 	string MenuItemImages[DRAW_ITM_COUNT];
+
+	//TODO: Prepare images for each menu item and add it to the list
 	MenuItemImages[ITM_RECT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\rect.jpg";
 	MenuItemImages[ITM_SQR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\square.jpg";
 	MenuItemImages[ITM_TRI] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\triangle.jpg";
@@ -108,10 +110,6 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_SAVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\saveg.jpg";
 	MenuItemImages[ITM_EXIT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\exitg.jpg";
 	
-	
-
-	//TODO: Prepare images for each menu item and add it to the list
-
 	//Draw menu item one image at a time
 	for(int i=0; i<27; i++)
 		pWind->DrawImage(MenuItemImages[i], i*UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
