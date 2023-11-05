@@ -31,6 +31,7 @@ Output::Output()
 	pWind->ChangeTitle("Paint for Kids - Programming Techniques Project");
 	
 	CreateDrawToolBar();
+	CreatePlayToolBar();/*++++++++++++++++*/
 	CreateStatusBar();
 }
 
@@ -128,6 +129,17 @@ void Output::CreateDrawToolBar() const
 void Output::CreatePlayToolBar() const
 {
 	UI.InterfaceMode = MODE_PLAY;
+	string MenuItemImages2[PLAY_ITM_COUNT];
+	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
+	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
+	MenuItemImages2[ITM_PAUSE] = "images\\MenuItems\\Menu_BOTH.jpg";
+	MenuItemImages2[ITM_SWITCH] = "images\\MenuItems\\Menu_SWITCH.jpg";
+	
+	for (int i = 0; i < PLAY_ITM_COUNT; i++)
+		pWind->DrawImage(MenuItemImages2[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
+
+
+
 	///TODO: write code to create Play mode menu
 }
 //////////////////////////////////////////////////////////////////////////////////////////
