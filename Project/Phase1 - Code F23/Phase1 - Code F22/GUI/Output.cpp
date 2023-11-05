@@ -14,7 +14,7 @@ Output::Output()
 	
 	UI.StatusBarHeight = 50;
 	UI.ToolBarHeight = 50;
-	UI.MenuItemWidth = 80;
+	UI.MenuItemWidth = 45.7;
 	
 	UI.DrawColor = BLUE;	//Drawing color
 	UI.FillColor = GREEN;	//Filling color
@@ -80,15 +80,40 @@ void Output::CreateDrawToolBar() const
 	//To control the order of these images in the menu, 
 	//reoder them in UI_Info.h ==> enum DrawMenuItem
 	string MenuItemImages[DRAW_ITM_COUNT];
-	MenuItemImages[ITM_RECT] = "images\\MenuItems\\Menu_Rect.jpg";
-	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Menu_Exit.jpg";
-	MenuItemImages[ITM_CIRC] = "images\\MenuItems\\png-transparent-rectangle-shape-rectangle-purple-blue-angle.jpg";
+	MenuItemImages[ITM_RECT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\rect.jpg";
+	MenuItemImages[ITM_SQR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\square.jpg";
+	MenuItemImages[ITM_TRI] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\triangle.jpg";
+	MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\circle.jpg";
+	MenuItemImages[ITM_HEX] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\hexagon.jpg";
+	MenuItemImages[ITM_SELECT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\cursorg.jpg";
+	MenuItemImages[ITM_MOVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\move.jpg";
+	MenuItemImages[ITM_COLOR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\art.jpg";
+	MenuItemImages[ITM_BORDER] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\bordersg.jpg";
+	MenuItemImages[ITM_FILL] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\bucketg.jpg";
+	MenuItemImages[ITM_REC] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\record.jpg";
+	MenuItemImages[ITM_PLAY] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\playg.jpg";
+	MenuItemImages[ITM_STOP] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\stopg.jpg";
+	MenuItemImages[ITM_UNDO] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\ggundo.jpg";
+	MenuItemImages[ITM_REDO] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\ggredo.jpg";
+	MenuItemImages[ITM_DEL] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\deleteg.jpg";
+	MenuItemImages[ITM_CLEAR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\gclear.jpg";
+	MenuItemImages[ITM_BLACK] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\black.jpg";
+	MenuItemImages[ITM_RED] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\red.jpg";
+	MenuItemImages[ITM_GREEN] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\green.jpg";
+	MenuItemImages[ITM_BLUE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\blue.jpg";
+	MenuItemImages[ITM_YELLOW] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\yellow.jpg";
+	MenuItemImages[ITM_ORANGE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\orange.jpg";
+	MenuItemImages[ITM_SWITCH] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\playmode3g.jpg";
+	MenuItemImages[ITM_LOAD] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\loadg.jpg";
+	MenuItemImages[ITM_SAVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\saveg.jpg";
+	MenuItemImages[ITM_EXIT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\exitg.jpg";
+	
 	
 
 	//TODO: Prepare images for each menu item and add it to the list
 
 	//Draw menu item one image at a time
-	for(int i=0; i<DRAW_ITM_COUNT; i++)
+	for(int i=0; i<27; i++)
 		pWind->DrawImage(MenuItemImages[i], i*UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 
 

@@ -1,17 +1,14 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  TestCode.cpp
   Output.cpp
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(211,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(234,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Input.cpp
-auxil.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-  PT-Project.vcxproj -> D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(117,64): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(117,40): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(259,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe

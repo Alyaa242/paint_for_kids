@@ -21,12 +21,34 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	
 	//TODO: Add more items names here
 
+	ITM_SQR,
+	ITM_TRI,
 	ITM_CIRC,
-
+	ITM_HEX,
+	ITM_SELECT,
+	ITM_MOVE,
+	ITM_COLOR,
+	ITM_BORDER,
+	ITM_FILL,
+	ITM_REC,
+	ITM_PLAY,
+	ITM_STOP,
+	ITM_UNDO,
+	ITM_REDO,
+	ITM_DEL,
+	ITM_CLEAR,
+	ITM_BLACK,
+	ITM_RED,
+	ITM_GREEN,
+	ITM_BLUE,
+	ITM_YELLOW,
+	ITM_ORANGE,
+	ITM_SWITCH,
+	ITM_LOAD,
+	ITM_SAVE,
 	ITM_EXIT,	//Exit item
 	
-	DRAW_ITM_COUNT	,	//no. of menu items ==> This should be the last line in this enum
-	ITM_SWITCH  
+	DRAW_ITM_COUNT,	//no. of menu items ==> This should be the last line in this enum  
 };
 
 enum PlayMenuItem //The items of the Play menu (you should add more items)
@@ -48,10 +70,10 @@ struct UI_Info	//User Interface Info.
 	GUI_MODE InterfaceMode;
 	
 	int	width, height,	    //Window width and height
-		wx , wy,			//Window starting coordinates
+		wx, wy,			//Window starting coordinates
 		StatusBarHeight,	//Status Bar Height
-		ToolBarHeight,		//Tool Bar Height (distance from top of window to bottom line of toolbar)
-		MenuItemWidth;		//Width of each item in toolbar menu
+		ToolBarHeight;	//Tool Bar Height (distance from top of window to bottom line of toolbar)
+	double MenuItemWidth;		//Width of each item in toolbar menu
 	
 
 	color DrawColor;		//Drawing color
