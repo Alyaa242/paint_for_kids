@@ -80,33 +80,33 @@ void Output::CreateDrawToolBar() const
 	//To control the order of these images in the menu, 
 	//reoder them in UI_Info.h ==> enum DrawMenuItem
 	string MenuItemImages[DRAW_ITM_COUNT];
-	MenuItemImages[ITM_RECT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\rect.jpg";
-	MenuItemImages[ITM_SQR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\square.jpg";
-	MenuItemImages[ITM_TRI] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\triangle.jpg";
-	MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\circle.jpg";
-	MenuItemImages[ITM_HEX] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\hexagon.jpg";
-	MenuItemImages[ITM_SELECT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\cursorg.jpg";
-	MenuItemImages[ITM_MOVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\move.jpg";
-	MenuItemImages[ITM_COLOR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\art.jpg";
-	MenuItemImages[ITM_BORDER] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\bordersg.jpg";
-	MenuItemImages[ITM_FILL] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\bucketg.jpg";
-	MenuItemImages[ITM_REC] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\record.jpg";
-	MenuItemImages[ITM_PLAY] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\playg.jpg";
-	MenuItemImages[ITM_STOP] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\stopg.jpg";
-	MenuItemImages[ITM_UNDO] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\ggundo.jpg";
-	MenuItemImages[ITM_REDO] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\ggredo.jpg";
-	MenuItemImages[ITM_DEL] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\deleteg.jpg";
-	MenuItemImages[ITM_CLEAR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\gclear.jpg";
-	MenuItemImages[ITM_BLACK] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\black2.jpg";
-	MenuItemImages[ITM_RED] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\red2.jpg";
-	MenuItemImages[ITM_GREEN] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\green2.jpg";
-	MenuItemImages[ITM_BLUE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\blue2.jpg";
-	MenuItemImages[ITM_YELLOW] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\yellow2.jpg";
-	MenuItemImages[ITM_ORANGE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\orange2.jpg";
-	MenuItemImages[ITM_SWITCH] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\playmode3g.jpg";
-	MenuItemImages[ITM_LOAD] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\loadg.jpg";
-	MenuItemImages[ITM_SAVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\saveg.jpg";
-	MenuItemImages[ITM_EXIT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\exitg.jpg";
+	MenuItemImages[ITM_RECT] = "images\\MenuItems\\rect.jpg";
+	MenuItemImages[ITM_SQR] = "images\\MenuItems\\square.jpg";
+	MenuItemImages[ITM_TRI] = "images\\MenuItems\\triangle.jpg";
+	MenuItemImages[ITM_CIRC] = "images\\MenuItems\\circle.jpg";
+	MenuItemImages[ITM_HEX] = "images\\MenuItems\\hexagon.jpg";
+	MenuItemImages[ITM_SELECT] = "images\\MenuItems\\cursorg.jpg";
+	MenuItemImages[ITM_MOVE] = "images\\MenuItems\\move.jpg";
+	MenuItemImages[ITM_COLOR] = "images\\MenuItems\\art.jpg";
+	MenuItemImages[ITM_BORDER] = "images\\MenuItems\\bordersg.jpg";
+	MenuItemImages[ITM_FILL] = "images\\MenuItems\\bucketg.jpg";
+	MenuItemImages[ITM_REC] = "images\\MenuItems\\record.jpg";
+	MenuItemImages[ITM_PLAY] = "images\\MenuItems\\playg.jpg";
+	MenuItemImages[ITM_STOP] = "images\\MenuItems\\stopg.jpg";
+	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\ggundo.jpg";
+	MenuItemImages[ITM_REDO] = "images\\MenuItems\\ggredo.jpg";
+	MenuItemImages[ITM_DEL] = "images\\MenuItems\\deleteg.jpg";
+	MenuItemImages[ITM_CLEAR] = "images\\MenuItems\\gclear.jpg";
+	MenuItemImages[ITM_BLACK] = "images\\MenuItems\\black2.jpg";
+	MenuItemImages[ITM_RED] = "images\\MenuItems\\red2.jpg";
+	MenuItemImages[ITM_GREEN] = "images\\MenuItems\\green2.jpg";
+	MenuItemImages[ITM_BLUE] = "images\\MenuItems\\blue2.jpg";
+	MenuItemImages[ITM_YELLOW] = "images\\MenuItems\\yellow2.jpg";
+	MenuItemImages[ITM_ORANGE] = "images\\MenuItems\\orange2.jpg";
+	MenuItemImages[ITM_SWITCH] = "images\\MenuItems\\playmode3g.jpg";
+	MenuItemImages[ITM_LOAD] = "images\\MenuItems\\loadg.jpg";
+	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\saveg.jpg";
+	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\exitg.jpg";
 
 	//MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Icons\\palette.jpg";
 	
@@ -130,10 +130,10 @@ void Output::CreatePlayToolBar() const
 	UI.InterfaceMode = MODE_PLAY;
 
 	string MenuItemImages2[PLAY_ITM_COUNT];
-	MenuItemImages2[ITM_PICK_BY_FIGURE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_FIGURE2.jpg";
-	MenuItemImages2[ITM_PICK_BY_COLOR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_COLOR.jpg";
-	MenuItemImages2[ITM_PAUSE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\both.jpeg";
-	MenuItemImages2[ITM_SWITCH2] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_SWITCH.jpg";
+	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
+	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
+	MenuItemImages2[ITM_PAUSE] = "images\\MenuItems\\both.jpeg";
+	MenuItemImages2[ITM_SWITCH2] = "images\\MenuItems\\Menu_SWITCH.jpg";
 
 	pWind->SetPen(WHITE, 1);
 	pWind->SetBrush(WHITE);
