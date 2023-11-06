@@ -31,7 +31,6 @@ Output::Output()
 	pWind->ChangeTitle("Paint for Kids - Programming Techniques Project");
 	
 	CreateDrawToolBar();
-	CreatePlayToolBar();/*++++++++++++++++*/
 	CreateStatusBar();
 }
 
@@ -81,8 +80,6 @@ void Output::CreateDrawToolBar() const
 	//To control the order of these images in the menu, 
 	//reoder them in UI_Info.h ==> enum DrawMenuItem
 	string MenuItemImages[DRAW_ITM_COUNT];
-
-	//TODO: Prepare images for each menu item and add it to the list
 	MenuItemImages[ITM_RECT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\rect.jpg";
 	MenuItemImages[ITM_SQR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\square.jpg";
 	MenuItemImages[ITM_TRI] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\triangle.jpg";
@@ -111,8 +108,12 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_SAVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\saveg.jpg";
 	MenuItemImages[ITM_EXIT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\exitg.jpg";
 	
+	
+
+	//TODO: Prepare images for each menu item and add it to the list
+
 	//Draw menu item one image at a time
-	for(int i=0; i<27; i++)
+	for(int i=0; i<DRAW_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages[i], i*UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 
 
@@ -127,18 +128,23 @@ void Output::CreateDrawToolBar() const
 void Output::CreatePlayToolBar() const
 {
 	UI.InterfaceMode = MODE_PLAY;
+	///TODO: write code to create Play mode menu
+
 	string MenuItemImages2[PLAY_ITM_COUNT];
-	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
-	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
-	MenuItemImages2[ITM_BOTH] = "images\\MenuItems\\Menu_BOTH.jpg";
-	MenuItemImages2[ITM_SWITCH] = "images\\MenuItems\\Menu_SWITCH.jpg";
-	
+	MenuItemImages2[ITM_PICK_BY_FIGURE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_FIGURE2.jpg";
+	MenuItemImages2[ITM_PICK_BY_COLOR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_COLOR.jpg";
+	MenuItemImages2[ITM_PAUSE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_BOTH.jpg";
+	MenuItemImages2[ITM_SWITCH2] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_SWITCH.jpg";
+
+	pWind->SetPen(WHITE, 1);
+	pWind->SetBrush(WHITE);
+	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
+	pWind->SetPen(RED, 3);
+	pWind->DrawLine(0, UI.ToolBarHeight, UI.width, UI.ToolBarHeight);
+
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages2[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 
-
-
-	///TODO: write code to create Play mode menu
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 

@@ -2,11 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< Updated upstream
       <FullPath>D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe</FullPath>
-=======
-      <FullPath>C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe</FullPath>
->>>>>>> Stashed changes
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
