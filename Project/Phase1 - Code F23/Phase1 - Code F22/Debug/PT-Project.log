@@ -1,27 +1,129 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  TestCode.cpp
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(51,1): error C2143: syntax error: missing '}' before '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(51,1): error C2059: syntax error: '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(57,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(57,1): error C2059: syntax error: '}'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(70,2): error C2365: 'ITM_SWITCH': redefinition; previous definition was 'enumerator'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(46,2): message : see declaration of 'ITM_SWITCH'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(89,1): error C2059: syntax error: '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(93,1): error C2059: syntax error: '=='
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(97,16): error C2238: unexpected token(s) preceding ';'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(99,1): error C2059: syntax error: '>>'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(101,17): error C2238: unexpected token(s) preceding ';'
   Output.cpp
-<<<<<<< Updated upstream
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(117,64): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(117,40): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(236,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(259,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
-=======
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(223,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
-C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  PT-Project.vcxproj -> C:\Users\shefozzz\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
->>>>>>> Stashed changes
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(51,1): error C2143: syntax error: missing '}' before '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(51,1): error C2059: syntax error: '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(57,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(57,1): error C2059: syntax error: '}'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(70,2): error C2365: 'ITM_SWITCH': redefinition; previous definition was 'enumerator'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(46,2): message : see declaration of 'ITM_SWITCH'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(89,1): error C2059: syntax error: '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(93,1): error C2059: syntax error: '=='
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(97,16): error C2238: unexpected token(s) preceding ';'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(99,1): error C2059: syntax error: '>>'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(101,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(16,5): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(19,5): error C2039: 'DrawColor': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(54,26): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(54,4): error C2660: 'window::DrawRectangle': function does not take 3 arguments
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.h(255,9): message : see declaration of 'window::DrawRectangle'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(54,4): message : while trying to match the argument list '(int, int, int)'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(83,24): error C2065: 'DRAW_ITM_COUNT': undeclared identifier
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(86,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(87,26): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(88,26): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(89,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(90,26): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(91,29): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(92,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(93,28): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(94,29): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(95,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(96,26): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(97,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(98,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(99,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(100,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(101,26): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(102,28): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(103,28): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(104,26): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(105,28): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(106,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(107,29): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(108,29): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(109,29): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(110,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(111,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(112,27): error C3863: array type 'std::string [0]' is not assignable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(116,83): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(116,8): error C2668: 'window::DrawImage': ambiguous call to overloaded function
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.h(307,7): message : could be 'void window::DrawImage(const image &,const int,const int,const int,const int)'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.h(306,7): message : or       'void window::DrawImage(const image *,const int,const int,const int,const int)'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(116,8): message : while trying to match the argument list '(std::string [0], double, int, double)'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(122,24): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(122,52): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(122,7): error C2660: 'window::DrawLine': function does not take 2 arguments
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.h(249,9): message : see declaration of 'window::DrawLine'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(122,7): message : while trying to match the argument list '(int, int)'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(137,86): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(137,67): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(137,42): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(149,29): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(149,7): error C2660: 'window::DrawRectangle': function does not take 3 arguments
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.h(255,9): message : see declaration of 'window::DrawRectangle'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(149,7): message : while trying to match the argument list '(int, int, int)'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(165,13): error C2039: 'DrawColor': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(246,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Output.cpp(269,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Input.cpp
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(51,1): error C2143: syntax error: missing '}' before '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(51,1): error C2059: syntax error: '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(57,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(57,1): error C2059: syntax error: '}'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(70,2): error C2365: 'ITM_SWITCH': redefinition; previous definition was 'enumerator'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(46,2): message : see declaration of 'ITM_SWITCH'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(89,1): error C2059: syntax error: '<<'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(93,1): error C2059: syntax error: '=='
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(97,16): error C2238: unexpected token(s) preceding ';'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(99,1): error C2059: syntax error: '>>'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(101,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Input.cpp(44,25): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Input.cpp(48,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\Input.cpp(62,16): error C2039: 'ToolBarHeight': is not a member of 'UI_Info'
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\GUI\UI_Info.h(82,8): message : see declaration of 'UI_Info'
+  windowinput.cpp
+  mousequeue.cpp
+  keyqueue.cpp
+  image.cpp
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\image.cpp(115,29): warning C4018: '<': signed/unsigned mismatch
+  colors.cpp
+  CMUgraphics.cpp
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(257,9): warning C4101: 'iX': unreferenced local variable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(257,13): warning C4101: 'iY': unreferenced local variable
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(751,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(1164,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(1171,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(1202,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(1210,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\CMUgraphicsLib\CMUgraphics.cpp(1357,23): warning C4018: '>': signed/unsigned mismatch
+  auxil.cpp
+  Generating Code...

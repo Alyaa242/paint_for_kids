@@ -130,7 +130,7 @@ void Output::CreatePlayToolBar() const
 	string MenuItemImages2[PLAY_ITM_COUNT];
 	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
 	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
-	MenuItemImages2[ITM_PAUSE] = "images\\MenuItems\\Menu_BOTH.jpg";
+	MenuItemImages2[ITM_BOTH] = "images\\MenuItems\\Menu_BOTH.jpg";
 	MenuItemImages2[ITM_SWITCH] = "images\\MenuItems\\Menu_SWITCH.jpg";
 	
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
