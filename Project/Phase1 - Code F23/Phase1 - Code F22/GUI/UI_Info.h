@@ -17,10 +17,7 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 {
 	//Note: Items are **(ordered)** here as they appear in menu
 	//If you want to change the menu items order, change the order here
-	ITM_RECT,		//Recangle item in menu
-	
-	//TODO: Add more items names here
-
+	ITM_RECT,
 	ITM_SQR,
 	ITM_TRI,
 	ITM_CIRC,
@@ -48,24 +45,28 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_SAVE,
 	ITM_EXIT,	//Exit item
 	
-	DRAW_ITM_COUNT,	//no. of menu items ==> This should be the last line in this enum  
+	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
+	
 };
 
 enum PlayMenuItem //The items of the Play menu (you should add more items)
 {
 	//Note: Items are **(ordered)** here as they appear in menu
 	//If you want to change the menu items order, change the order here
-	
-	//TODO: Add more items names here
 
 	ITM_PICK_BY_FIGURE,
 	ITM_PICK_BY_COLOR,
 	ITM_PAUSE,
 	ITM_SWITCH2,
 
+	//TODO: Add more items names here
+
 	PLAY_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 	
 };
+
+
+
 
 
 __declspec(selectany) //This line to prevent "redefinition error"

@@ -97,19 +97,19 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_REDO] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\ggredo.jpg";
 	MenuItemImages[ITM_DEL] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\deleteg.jpg";
 	MenuItemImages[ITM_CLEAR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\gclear.jpg";
-	MenuItemImages[ITM_BLACK] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\black.jpg";
-	MenuItemImages[ITM_RED] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\red.jpg";
-	MenuItemImages[ITM_GREEN] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\green.jpg";
-	MenuItemImages[ITM_BLUE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\blue.jpg";
-	MenuItemImages[ITM_YELLOW] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\yellow.jpg";
-	MenuItemImages[ITM_ORANGE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\orange.jpg";
+	MenuItemImages[ITM_BLACK] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\black2.jpg";
+	MenuItemImages[ITM_RED] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\red2.jpg";
+	MenuItemImages[ITM_GREEN] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\green2.jpg";
+	MenuItemImages[ITM_BLUE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\blue2.jpg";
+	MenuItemImages[ITM_YELLOW] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\yellow2.jpg";
+	MenuItemImages[ITM_ORANGE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\orange2.jpg";
 	MenuItemImages[ITM_SWITCH] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\playmode3g.jpg";
 	MenuItemImages[ITM_LOAD] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\loadg.jpg";
 	MenuItemImages[ITM_SAVE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\saveg.jpg";
 	MenuItemImages[ITM_EXIT] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Icons\\exitg.jpg";
-	
-	
 
+	//MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Icons\\palette.jpg";
+	
 	//TODO: Prepare images for each menu item and add it to the list
 
 	//Draw menu item one image at a time
@@ -128,12 +128,11 @@ void Output::CreateDrawToolBar() const
 void Output::CreatePlayToolBar() const
 {
 	UI.InterfaceMode = MODE_PLAY;
-	///TODO: write code to create Play mode menu
 
 	string MenuItemImages2[PLAY_ITM_COUNT];
 	MenuItemImages2[ITM_PICK_BY_FIGURE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_FIGURE2.jpg";
 	MenuItemImages2[ITM_PICK_BY_COLOR] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_COLOR.jpg";
-	MenuItemImages2[ITM_PAUSE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_BOTH.jpg";
+	MenuItemImages2[ITM_PAUSE] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\both.jpeg";
 	MenuItemImages2[ITM_SWITCH2] = "D:\\Year one\\Programming techniques\\Paint\\Project\\Phase1 - Code F23\\Phase1 - Code F22\\images\\MenuItems\\Menu_SWITCH.jpg";
 
 	pWind->SetPen(WHITE, 1);
@@ -141,10 +140,11 @@ void Output::CreatePlayToolBar() const
 	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
 	pWind->SetPen(RED, 3);
 	pWind->DrawLine(0, UI.ToolBarHeight, UI.width, UI.ToolBarHeight);
-
+	
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages2[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 
+	///TODO: write code to create Play mode menu
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -185,115 +185,26 @@ int Output::getCrntPenWidth() const		//get current pen width
 void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) const
 {
 	color DrawingClr;
-	if (selected)
+	if(selected)	
 		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
-	else
+	else			
 		DrawingClr = RectGfxInfo.DrawClr;
-
-	pWind->SetPen(DrawingClr, 1);
+	
+	pWind->SetPen(DrawingClr,1);
 	drawstyle style;
-	if (RectGfxInfo.isFilled)
+	if (RectGfxInfo.isFilled)	
 	{
-		style = FILLED;
+		style = FILLED;		
 		pWind->SetBrush(RectGfxInfo.FillClr);
 	}
-	else
+	else	
 		style = FRAME;
 
-
+	
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
-
+	
 }
 
-void Output::DrawSquare(Point p, GfxInfo SquareGfxInfo, bool selected)const
-{
-	color DrawingClr;
-	int sideLenght = 100;
-	if (selected)
-		DrawingClr = UI.HighlightColor;
-	else
-		DrawingClr = SquareGfxInfo.DrawClr;
-
-	pWind->SetPen(DrawingClr, 1);
-	drawstyle style;
-	if (SquareGfxInfo.isFilled)
-	{
-		style = FILLED;
-		pWind->SetBrush(SquareGfxInfo.FillClr);
-	}
-	else
-		style = FRAME;
-	pWind->DrawRectangle(p.x - sideLenght, p.y - sideLenght, p.x + sideLenght, p.y + sideLenght, style);
-}
-void Output::DrawTriangle(Point p1, Point p2, Point p3, GfxInfo TriangleGfxInfo, bool selected)const
-{
-	color DrawingClr;
-	if (selected)
-		DrawingClr = UI.HighlightColor;
-	else
-		DrawingClr = TriangleGfxInfo.DrawClr;
-	pWind->SetPen(DrawingClr, 1);
-	drawstyle style;
-	if (TriangleGfxInfo.isFilled)
-	{
-		style = FILLED;
-		pWind->SetBrush(TriangleGfxInfo.FillClr);
-	}
-	else
-		style = FRAME;
-	pWind->DrawTriangle(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, style);
-}
-
-void Output::DrawHexagon(Point p, GfxInfo HexagonGfxInfo, bool selected)const
-{
-	const int vertices = 6;
-	int sideLenght = 100;
-	const int xvalues[vertices] = { p.x + sideLenght / 2,p.x + sideLenght,p.x + sideLenght / 2,p.x - sideLenght / 2,p.x - sideLenght,p.x - sideLenght / 2 };
-	const int yvalues[vertices] = { p.y + (sideLenght / 2) * sqrt(3),p.y,p.y - (sideLenght / 2) * sqrt(3),p.y - (sideLenght / 2) * sqrt(3),p.y,p.y + (sideLenght / 2) * sqrt(3) };
-
-
-	color DrawingClr;
-	if (selected)
-		DrawingClr = UI.HighlightColor;
-	else
-		DrawingClr = HexagonGfxInfo.DrawClr;
-	pWind->SetPen(DrawingClr, 1);
-	drawstyle style;
-	if (HexagonGfxInfo.isFilled)
-	{
-		style = FILLED;
-		pWind->SetBrush(HexagonGfxInfo.FillClr);
-	}
-	else
-		style = FRAME;
-
-	pWind->DrawPolygon(xvalues, yvalues, vertices, style);
-
-}
-void Output::DrawCircle(Point Pc, Point P, GfxInfo CircleGfxInfo, bool selected)const
-{
-	int radius = sqrt(pow(Pc.x - P.x, 2) + pow(Pc.y - P.y, 2));
-	color DrawingClr;
-	if (selected)
-		DrawingClr = UI.HighlightColor;
-	else
-		DrawingClr = CircleGfxInfo.DrawClr;
-
-	pWind->SetPen(DrawingClr, 1);
-	drawstyle style;
-	if (CircleGfxInfo.isFilled)
-	{
-		style = FILLED;
-		pWind->SetBrush(CircleGfxInfo.FillClr);
-	}
-	else
-		style = FRAME;
-
-
-
-	pWind->DrawCircle(Pc.x, Pc.y, radius, style);
-
-}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 Output::~Output()
