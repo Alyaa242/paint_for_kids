@@ -14,7 +14,7 @@ Output::Output()
 	
 	UI.StatusBarHeight = 50;
 	UI.ToolBarHeight = 50;
-	UI.MenuItemWidth = 45.7;
+	UI.MenuItemWidth = 45;
 	
 	UI.DrawColor = BLUE;	//Drawing color
 	UI.FillColor = GREEN;	//Filling color
@@ -50,7 +50,7 @@ window* Output::CreateWind(int w, int h, int x, int y) const
 	window* pW = new window(w, h, x, y);
 	pW->SetBrush(UI.BkGrndColor);
 	pW->SetPen(UI.BkGrndColor, 1);
-	pW->DrawRectangle(0, UI.ToolBarHeight, w, h);	
+	pW->DrawRectangle(0, UI.ToolBarHeight+10, w, h);	
 	return pW;
 }
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -119,8 +119,8 @@ void Output::CreateDrawToolBar() const
 
 
 	//Draw a line under the toolbar
-	pWind->SetPen(RED, 3);
-	pWind->DrawLine(0, UI.ToolBarHeight, UI.width, UI.ToolBarHeight);	
+	pWind->SetPen(BLUE, 5);
+	pWind->DrawLine(0, UI.ToolBarHeight+10, UI.width, UI.ToolBarHeight+10);	
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -133,7 +133,7 @@ void Output::CreatePlayToolBar() const
 	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
 	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
 	MenuItemImages2[ITM_PAUSE] = "images\\MenuItems\\both.jpeg";
-	MenuItemImages2[ITM_SWITCH2] = "images\\MenuItems\\Menu_SWITCH.jpg";
+	MenuItemImages2[ITM_SWITCH_TO_DRAW] = "images\\MenuItems\\Menu_SWITCH.jpg";
 
 	pWind->SetPen(WHITE, 1);
 	pWind->SetBrush(WHITE);

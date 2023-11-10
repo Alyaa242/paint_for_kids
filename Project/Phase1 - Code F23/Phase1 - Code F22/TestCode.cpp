@@ -1,6 +1,7 @@
 #include "GUI\Input.h"
 #include "GUI\Output.h"
 
+
 //This is a test code to test the Input and Output classes
 
 int main()
@@ -134,7 +135,7 @@ int main()
 	pIn->GetPointClicked(x,y);	//Wait for any click
 	
 	pOut->PrintMessage("Testing Input ability to read strings");
-
+	pIn->GetSrting(pOut);
 	///TODO: Add code here to 
 	// 1- Read a string from the user on the status bar
 	// 2- After reading the string clear the status bar
@@ -160,7 +161,7 @@ int main()
 
 		switch (ActType)
 		{
-		case DRAW_RECT:
+		case DRAW_RECTANGLE:
 				pOut->PrintMessage("Action: Draw a Rectangle , Click anywhere");
 				break;
 
@@ -178,13 +179,163 @@ int main()
 
 		case TO_DRAW:
 				pOut->PrintMessage("Action: Switch to Draw Mode, creating simualtion tool bar");
-				pOut->CreateDrawToolBar();
+				
 				break;
 
 		case TO_PLAY:
 				pOut->PrintMessage("Action: Switch to Play Mode, creating Design tool bar");
-				pOut->CreatePlayToolBar();
+			
 				break;
+
+		case DRAW_SQARE:
+			pOut->PrintMessage("Action: Draw a sqare , creating Design tool bar");
+			
+			break;
+
+		case DRAW_TRIANGLE:
+			pOut->PrintMessage("Action: Draw a triangle , creating Design tool bar");
+			
+			break;
+
+		case DRAW_CIRCLE:
+			pOut->PrintMessage("Action: Draw a circle , creating Design tool bar");
+			
+			break;
+
+		case DRAW_HEXOGONAL:
+			pOut->PrintMessage("Action: Draw a hexogonal , creating Design tool bar");
+			
+			break;
+
+		case SELECT:
+			pOut->PrintMessage("Action: Select , creating Design tool bar");
+			
+			break;
+
+		case MOVE:
+			pOut->PrintMessage("Action: Move , creating Design tool bar");
+			
+			break;
+
+		case COLOR:
+			pOut->PrintMessage("Action: COLOR , creating Design tool bar");
+			
+			break;
+
+		case BORDER:
+			pOut->PrintMessage("Action: border , creating Design tool bar");
+			
+			break;
+
+		case FILL:
+			pOut->PrintMessage("Action: fill , creating Design tool bar");
+			
+			break;
+
+		case PLAY:
+			pOut->PrintMessage("Action: Play , creating Design tool bar");
+			
+			break;
+
+
+		case STOP:
+			pOut->PrintMessage("Action: STOP , creating Design tool bar");
+			
+			break;
+
+
+		case UNDO:
+			pOut->PrintMessage("Action: UNDO , creating Design tool bar");
+			
+			break;
+
+
+		case REDO:
+			pOut->PrintMessage("Action: REDO , creating Design tool bar");
+			
+			break;
+
+
+		case DEL :
+			pOut->PrintMessage("Action: Delete , creating Design tool bar");
+			
+			break;
+
+
+		case CLEAR:
+			pOut->PrintMessage("Action: CLEAR , creating Design tool bar");
+			
+			break;
+
+		case COLOR_BLACK:
+			pOut->PrintMessage("Action: black , creating Design tool bar");
+			
+			break;
+
+		case COLOR_RED:
+			pOut->PrintMessage("Action: red , creating Design tool bar");
+			
+			break;
+
+		case COLOR_GREEN:
+			pOut->PrintMessage("Action: green , creating Design tool bar");
+			
+			break;
+
+		case COLOR_BLUE:
+			pOut->PrintMessage("Action: blue , creating Design tool bar");
+			
+			break;
+
+		case COLOR_YELLOW:
+			pOut->PrintMessage("Action: yellow , creating Design tool bar");
+			
+			break;
+
+		case COLOR_ORANGE:
+			pOut->PrintMessage("Action: orange , creating Design tool bar");
+			
+			break;
+
+		case SWITCH_TO_PLAY:
+			pOut->PrintMessage("Action: switch to play , creating Design tool bar");
+			pOut->CreatePlayToolBar();
+			break;
+
+		case LOAD:
+			pOut->PrintMessage("Action: load , creating Design tool bar");
+			
+			break;
+
+		case SAVE:
+			pOut->PrintMessage("Action: SAVE , creating Design tool bar");
+			
+			break;
+
+		case PICK_BY_FIGURE:
+			pOut->PrintMessage("Action: PICK_BY_FIGURE , creating Design tool bar");
+			
+			break;
+			
+		case PICK_BY_COLOR:
+			pOut->PrintMessage("Action: PICK_BY_COLOR , creating Design tool bar");
+			
+			break;
+
+		case PAUSE:
+			pOut->PrintMessage("Action: both , creating Design tool bar");
+			
+			break;
+
+		case SWITCH_TO_DRAW:
+			pOut->PrintMessage("Action: SWITCH_TO_DRAW , creating Design tool bar");
+			pOut->CreateDrawToolBar();
+			break;
+
+
+
+
+
 
 
 		///TODO: Add more cases for the other action types

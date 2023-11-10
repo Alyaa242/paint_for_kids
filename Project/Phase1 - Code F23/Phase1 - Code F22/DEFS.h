@@ -6,7 +6,35 @@
 //This file contains some global constants and definitions to be used in the project.
 enum ActionType //The actions supported (you can add more if needed)
 {
-	DRAW_RECT,		//Draw Rectangle
+	DRAW_RECTANGLE,//Draw Rectangle
+	DRAW_SQARE,
+	DRAW_TRIANGLE,
+	DRAW_CIRCLE,
+	DRAW_HEXOGONAL,
+	SELECT,
+	MOVE,
+	COLOR,
+	BORDER,
+	FILL,
+	PLAY,
+	STOP,
+	UNDO,
+	REDO,
+	DEL,
+	CLEAR,
+	COLOR_BLACK,
+	COLOR_RED,
+	COLOR_GREEN,
+	COLOR_BLUE,
+	COLOR_YELLOW,
+	COLOR_ORANGE,
+	SWITCH_TO_PLAY,
+	LOAD,
+	SAVE,
+	PICK_BY_FIGURE,
+	PICK_BY_COLOR,
+	PAUSE,
+	SWITCH_TO_DRAW,
 	EXIT,			//Exit
 	TO_DRAW,		//Switch interface to Draw mode
 	TO_PLAY,		//Switch interface to Play mode

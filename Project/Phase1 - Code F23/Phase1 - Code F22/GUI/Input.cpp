@@ -51,10 +51,32 @@ ActionType Input::GetUserAction() const
 
 			switch (ClickedItemOrder)
 			{
-			case ITM_RECT: return DRAW_RECT;
-			case ITM_EXIT: return EXIT;	
-			case ITM_SWITCH: return TO_PLAY;
-			
+			case ITM_RECT: return DRAW_RECTANGLE;
+			case ITM_SQR: return DRAW_SQARE;
+			case ITM_TRI: return DRAW_TRIANGLE;
+			case ITM_CIRC: return DRAW_CIRCLE;
+			case ITM_HEX: return DRAW_HEXOGONAL;
+			case ITM_SELECT: return SELECT;
+			case ITM_MOVE: return MOVE;
+			case ITM_COLOR: return COLOR;
+			case ITM_BORDER: return BORDER;
+			case ITM_FILL: return FILL;
+			case ITM_PLAY: return PLAY;
+			case ITM_STOP: return STOP;
+			case ITM_UNDO: return UNDO;
+			case ITM_REDO: return REDO;
+			case ITM_DEL: return DEL;
+			case ITM_CLEAR: return CLEAR;
+			case ITM_BLACK: return COLOR_BLACK;
+			case ITM_RED: return COLOR_RED;
+			case ITM_GREEN: return COLOR_GREEN;
+			case ITM_BLUE: return COLOR_BLUE;
+			case ITM_YELLOW: return COLOR_YELLOW;
+			case ITM_ORANGE: return COLOR_ORANGE;
+			case ITM_SWITCH: return SWITCH_TO_PLAY;
+			case ITM_LOAD: return LOAD;
+			case ITM_SAVE: return SAVE;
+			case ITM_EXIT: return EXIT;
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
 		}
@@ -70,15 +92,34 @@ ActionType Input::GetUserAction() const
 	}
 	else	//GUI is in PLAY mode
 	{
-		///TODO:
-		//perform checks similar to Draw mode checks above
-		//and return the correspoding action
-		return TO_PLAY;	//just for now. This should be updated
-	}	
+		if (y >= 0 && y < UI.ToolBarHeight)
+		{
+			//Check whick Menu item was clicked
+			//==> This assumes that menu items are lined up horizontally <==
+			int ClickedItemOrder = (x / UI.MenuItemWidth);
+			//Divide x coord of the point clicked by the menu item width (int division)
+			//if division result is 0 ==> first item is clicked, if 1 ==> 2nd item and so on
+
+			switch (ClickedItemOrder) {
+			case ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;
+			case ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
+			case ITM_PAUSE: return PAUSE;
+			case ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;
+
+
+			}
+		}
+
+
+
+
+			///TODO:
+			//perform checks similar to Draw mode checks above
+			//and return the correspoding action
+			return TO_PLAY;	//just for now. This should be updated
+		}
 
 }
 /////////////////////////////////
 	
-Input::~Input()
-{
-}
+Input::~Input() {};
