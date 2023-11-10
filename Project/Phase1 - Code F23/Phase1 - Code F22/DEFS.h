@@ -16,6 +16,7 @@ enum ActionType //The actions supported (you can add more if needed)
 	COLOR,
 	BORDER,
 	FILL,
+	REC,
 	PLAY,
 	STOP,
 	UNDO,

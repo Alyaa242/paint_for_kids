@@ -61,6 +61,7 @@ ActionType Input::GetUserAction() const
 			case ITM_COLOR: return COLOR;
 			case ITM_BORDER: return BORDER;
 			case ITM_FILL: return FILL;
+			case ITM_REC:  return REC;
 			case ITM_PLAY: return PLAY;
 			case ITM_STOP: return STOP;
 			case ITM_UNDO: return UNDO;

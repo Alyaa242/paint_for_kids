@@ -1,4 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (.\Debug\) contains files shared from another project (proj-copy.vcxproj).  This can lead to incorrect clean and rebuild behavior.
 cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   TestCode.cpp
-  PT-Project.vcxproj -> C:\Users\HP\Documents\GitHub\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
+  PT-Project.vcxproj -> D:\paint_for_kids\Project\Phase1 - Code F23\Phase1 - Code F22\Debug\PT Project.exe
