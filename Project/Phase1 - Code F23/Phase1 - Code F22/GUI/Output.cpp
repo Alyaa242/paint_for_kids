@@ -108,7 +108,6 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\saveg.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\exitg.jpg";
 
-	//MenuItemImages[ITM_CIRC] = "D:\\Year one\\Programming techniques\\Project\\Icons\\palette.jpg";
 	
 	//TODO: Prepare images for each menu item and add it to the list
 
@@ -152,7 +151,8 @@ void Output::ClearDrawArea() const
 {
 	pWind->SetPen(UI.BkGrndColor, 1);
 	pWind->SetBrush(UI.BkGrndColor);
-	pWind->DrawRectangle(0, UI.ToolBarHeight+15, UI.width, UI.height - UI.StatusBarHeight);
+	pWind->DrawRectangle(0, UI.ToolBarHeight+13, UI.width, UI.height - UI.StatusBarHeight);
+	
 	
 }
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -189,8 +189,8 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
 	else
 		DrawingClr = RectGfxInfo.DrawClr;
-
 	pWind->SetPen(DrawingClr, 1);
+
 	drawstyle style;
 	if (RectGfxInfo.isFilled)
 	{
@@ -199,16 +199,23 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 	}
 	else
 		style = FRAME;
+	if (P1.y < UI.ToolBarHeight + 13)
+		P1.y = UI.ToolBarHeight + 13;
+	if (P2.y < UI.ToolBarHeight + 13)
+		P2.y = UI.ToolBarHeight + 13;
+	
 
 
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
+
+	
 
 }
 
 void Output::DrawSquare(Point p, GfxInfo SquareGfxInfo, bool selected)const
 {
 	color DrawingClr;
-	int sideLenght = 100;
+	int HalfsideLenght = 100;
 	if (selected)
 		DrawingClr = UI.HighlightColor;
 	else
@@ -223,7 +230,10 @@ void Output::DrawSquare(Point p, GfxInfo SquareGfxInfo, bool selected)const
 	}
 	else
 		style = FRAME;
-	pWind->DrawRectangle(p.x - sideLenght, p.y - sideLenght, p.x + sideLenght, p.y + sideLenght, style);
+	if (p.y < UI.ToolBarHeight + 13 + HalfsideLenght )
+		p.y = UI.ToolBarHeight + 13 + HalfsideLenght ;
+	pWind->DrawRectangle(p.x - HalfsideLenght, p.y - HalfsideLenght, p.x + HalfsideLenght, p.y + HalfsideLenght, style);
+
 }
 void Output::DrawTriangle(Point p1, Point p2, Point p3, GfxInfo TriangleGfxInfo, bool selected)const
 {
@@ -241,6 +251,13 @@ void Output::DrawTriangle(Point p1, Point p2, Point p3, GfxInfo TriangleGfxInfo,
 	}
 	else
 		style = FRAME;
+	if (p1.y < UI.ToolBarHeight + 13)
+		p1.y = UI.ToolBarHeight + 13;
+	if (p2.y < UI.ToolBarHeight + 13)
+		p2.y = UI.ToolBarHeight + 13;
+	if (p3.y < UI.ToolBarHeight + 13)
+		p3.y = UI.ToolBarHeight + 13;
+	
 	pWind->DrawTriangle(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, style);
 }
 
@@ -248,6 +265,8 @@ void Output::DrawHexagon(Point p, GfxInfo HexagonGfxInfo, bool selected)const
 {
 	const int vertices = 6;
 	int sideLenght = 100;
+	if (p.y < UI.ToolBarHeight + 13 + (sideLenght / 2) * sqrt(3))
+		p.y = UI.ToolBarHeight + 13 + (sideLenght / 2) * sqrt(3);
 	const int xvalues[vertices] = { p.x + sideLenght / 2,p.x + sideLenght,p.x + sideLenght / 2,p.x - sideLenght / 2,p.x - sideLenght,p.x - sideLenght / 2 };
 	const int yvalues[vertices] = { p.y + (sideLenght / 2) * sqrt(3),p.y,p.y - (sideLenght / 2) * sqrt(3),p.y - (sideLenght / 2) * sqrt(3),p.y,p.y + (sideLenght / 2) * sqrt(3) };
 
@@ -272,7 +291,12 @@ void Output::DrawHexagon(Point p, GfxInfo HexagonGfxInfo, bool selected)const
 }
 void Output::DrawCircle(Point Pc, Point P, GfxInfo CircleGfxInfo, bool selected)const
 {
+	if (P.y < UI.ToolBarHeight + 13)
+		P.y = UI.ToolBarHeight + 13;
 	int radius = sqrt(pow(Pc.x - P.x, 2) + pow(Pc.y - P.y, 2));
+	if (Pc.y < UI.ToolBarHeight + 13 + radius)
+		Pc.y = UI.ToolBarHeight + 13 + radius;
+	
 	color DrawingClr;
 	if (selected)
 		DrawingClr = UI.HighlightColor;

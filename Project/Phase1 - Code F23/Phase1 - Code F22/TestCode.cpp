@@ -2,6 +2,7 @@
 #include "GUI\Output.h"
 #include <Windows.h>
 
+
 //This is a test code to test the Input and Output classes
 
 int main()
@@ -65,6 +66,7 @@ int main()
 	pOut->PrintMessage("Drawing a Rectangle ==> filled,  Click two points");
 	pIn->GetPointClicked(P1.x, P1.y);
 	pIn->GetPointClicked(P2.x, P2.y);
+	//if(P1.x<)
 
 	gfxInfo.BorderWdth = 10;
 	gfxInfo.DrawClr = BLACK;	//any color for border
@@ -293,8 +295,8 @@ int main()
 		switch (ActType)
 		{
 		case DRAW_RECTANGLE:
-				PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 				pOut->PrintMessage("Action: Draw a Rectangle , Click anywhere");
+				PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 				break;
 
 		case STATUS:
@@ -320,26 +322,28 @@ int main()
 				break;
 
 		case DRAW_SQARE:
-			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 			pOut->PrintMessage("Action: Draw a sqare , creating Design tool bar");
+			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 			
 			break;
 
 		case DRAW_TRIANGLE:
-			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 			pOut->PrintMessage("Action: Draw a triangle , creating Design tool bar");
+			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 			
 			break;
 
 		case DRAW_CIRCLE:
-			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
+			 
 			pOut->PrintMessage("Action: Draw a circle , creating Design tool bar");
+			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 			
 			break;
 
 		case DRAW_HEXOGONAL:
-			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
+			
 			pOut->PrintMessage("Action: Draw a hexogon , creating Design tool bar");
+			PlaySound("sound effects\\select.wav", NULL, SND_SYNC);
 			
 			break;
 
