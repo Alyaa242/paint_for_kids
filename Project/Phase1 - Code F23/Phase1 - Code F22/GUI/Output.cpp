@@ -131,7 +131,7 @@ void Output::CreatePlayToolBar() const
 	string MenuItemImages2[PLAY_ITM_COUNT];
 	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
 	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
-	MenuItemImages2[ITM_PAUSE] = "images\\MenuItems\\both.jpeg";
+	MenuItemImages2[ITM_BOTH] = "images\\MenuItems\\both.jpeg";
 	MenuItemImages2[ITM_SWITCH_TO_DRAW] = "images\\MenuItems\\Menu_SWITCH.jpg";
 
 	pWind->SetPen(WHITE, 1);

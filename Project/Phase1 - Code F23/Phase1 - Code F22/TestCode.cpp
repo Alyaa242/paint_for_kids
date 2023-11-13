@@ -465,7 +465,7 @@ int main()
 			
 			break;
 
-		case PAUSE:
+		case BOTH:
 			pOut->PrintMessage("Action: both , creating Design tool bar");
 			
 			break;

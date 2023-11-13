@@ -34,7 +34,7 @@ enum ActionType //The actions supported (you can add more if needed)
 	SAVE,
 	PICK_BY_FIGURE,
 	PICK_BY_COLOR,
-	PAUSE,
+	BOTH,
 	SWITCH_TO_DRAW,
 	EXIT,			//Exit
 	TO_DRAW,		//Switch interface to Draw mode

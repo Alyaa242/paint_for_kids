@@ -104,7 +104,7 @@ ActionType Input::GetUserAction() const
 			switch (ClickedItemOrder) {
 			case ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;
 			case ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
-			case ITM_PAUSE: return PAUSE;
+			case ITM_BOTH: return BOTH;
 			case ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;
 
 
