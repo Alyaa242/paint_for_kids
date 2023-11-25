@@ -29,6 +29,8 @@ Output::Output()
 	pWind = CreateWind(UI.width, UI.height, UI.wx, UI.wy);
 	//Change the title
 	pWind->ChangeTitle("Paint for Kids - Programming Techniques Project");
+
+	Opening();//opening window
 	
 	CreateDrawToolBar();
 	CreateStatusBar();
@@ -44,14 +46,24 @@ Input* Output::CreateInput() const
 //======================================================================================//
 //								Interface Functions										//
 //======================================================================================//
+const int space = 10; //space for toolbar line
 
 window* Output::CreateWind(int w, int h, int x, int y) const
 { 
 	window* pW = new window(w, h, x, y);
 	pW->SetBrush(UI.BkGrndColor);
 	pW->SetPen(UI.BkGrndColor, 1);
-	pW->DrawRectangle(0, UI.ToolBarHeight+10, w, h);	
+	pW->DrawRectangle(0, UI.ToolBarHeight+space, w, h);	
 	return pW;
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+void Output::Opening() const
+{
+	pWind->DrawRectangle(0, 0, UI.width, UI.height);
+	pWind->DrawImage("images\\waving_kid.jpg", 0, 0,UI.width ,UI.height);
+	PlaySound("sound effects\\greeting.wav", NULL, SND_SYNC);
+	ClearDrawArea();
+
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 void Output::CreateStatusBar() const
@@ -119,7 +131,7 @@ void Output::CreateDrawToolBar() const
 
 	//Draw a line under the toolbar
 	pWind->SetPen(BLUE, 5);
-	pWind->DrawLine(0, UI.ToolBarHeight+10, UI.width, UI.ToolBarHeight+10);	
+	pWind->DrawLine(0, UI.ToolBarHeight+space, UI.width, UI.ToolBarHeight+space);	
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////
