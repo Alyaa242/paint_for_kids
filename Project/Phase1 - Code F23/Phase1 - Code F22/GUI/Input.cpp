@@ -58,7 +58,6 @@ ActionType Input::GetUserAction() const
 			case ITM_HEX: return DRAW_HEXOGONAL;
 			case ITM_SELECT: return SELECT;
 			case ITM_MOVE: return MOVE;
-			case ITM_COLOR: return COLOR;
 			case ITM_BORDER: return BORDER;
 			case ITM_FILL: return FILL;
 			case ITM_REC:  return REC;

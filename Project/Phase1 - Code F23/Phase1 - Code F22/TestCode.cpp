@@ -320,180 +320,174 @@ int main()
 				break;
 
 		case DRAW_SQARE:
-			pOut->PrintMessage("Action: Draw a sqare , creating Design tool bar");
+			pOut->PrintMessage("Action: Draw a Square , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case DRAW_TRIANGLE:
-			pOut->PrintMessage("Action: Draw a triangle , creating Design tool bar");
+			pOut->PrintMessage("Action: Draw a Triangle , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case DRAW_CIRCLE:
 			 
-			pOut->PrintMessage("Action: Draw a circle , creating Design tool bar");
+			pOut->PrintMessage("Action: Draw a Circle , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case DRAW_HEXOGONAL:
 			
-			pOut->PrintMessage("Action: Draw a hexogon , creating Design tool bar");
+			pOut->PrintMessage("Action: Draw a Hexogon , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case SELECT:
-			pOut->PrintMessage("Action: Select , creating Design tool bar");
+			pOut->PrintMessage("Action: Select , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case MOVE:
-			pOut->PrintMessage("Action: Move , creating Design tool bar");
-			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
-			
-			break;
-
-		case COLOR:
-			pOut->PrintMessage("Action: COLOR , creating Design tool bar");
+			pOut->PrintMessage("Action: Move , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case BORDER:
-			pOut->PrintMessage("Action: border , creating Design tool bar");
+			pOut->PrintMessage("Action: Border , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case FILL:
-			pOut->PrintMessage("Action: fill , creating Design tool bar");
+			pOut->PrintMessage("Action: Fill , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 			case REC:
-			pOut->PrintMessage("Action: Record , Creating Design tool bar");
+			pOut->PrintMessage("Action: Record , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			break;
 
 		case PLAY:
-			pOut->PrintMessage("Action: Play , creating Design tool bar");
+			pOut->PrintMessage("Action: Play , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 
 		case STOP:
-			pOut->PrintMessage("Action: STOP , creating Design tool bar");
+			pOut->PrintMessage("Action: Stop , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 
 		case UNDO:
-			pOut->PrintMessage("Action: UNDO , creating Design tool bar");
+			pOut->PrintMessage("Action: UNDO , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 
 		case REDO:
-			pOut->PrintMessage("Action: REDO , creating Design tool bar");
+			pOut->PrintMessage("Action: REDO , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 
 		case DEL :
-			pOut->PrintMessage("Action: Delete , creating Design tool bar");
+			pOut->PrintMessage("Action: Delete , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 
 		case CLEAR:
-			pOut->PrintMessage("Action: CLEAR , creating Design tool bar");
+			pOut->PrintMessage("Action: Clear , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case COLOR_BLACK:
-			pOut->PrintMessage("Action: black , creating Design tool bar");
+			pOut->PrintMessage("Action: black , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			break;
 
 		case COLOR_RED:
-			pOut->PrintMessage("Action: red , creating Design tool bar");
+			pOut->PrintMessage("Action: Red , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case COLOR_GREEN:
-			pOut->PrintMessage("Action: green , creating Design tool bar");
+			pOut->PrintMessage("Action: Green , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case COLOR_BLUE:
-			pOut->PrintMessage("Action: blue , creating Design tool bar");
+			pOut->PrintMessage("Action: Blue , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case COLOR_YELLOW:
-			pOut->PrintMessage("Action: yellow , creating Design tool bar");
+			pOut->PrintMessage("Action: Yellow , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case COLOR_ORANGE:
-			pOut->PrintMessage("Action: orange , creating Design tool bar");
+			pOut->PrintMessage("Action: Orange , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case SWITCH_TO_PLAY:
-			pOut->PrintMessage("Action: switch to play , creating Design tool bar");
+			pOut->PrintMessage("Action: Switch to Play Mode , Click anywhere");
 
 			pOut->CreatePlayToolBar();
 			PlaySound("sound effects\\playmode.wav", NULL, SND_ASYNC);
 			break;
 
 		case LOAD:
-			pOut->PrintMessage("Action: load , creating Design tool bar");
+			pOut->PrintMessage("Action: Load , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case SAVE:
-			pOut->PrintMessage("Action: SAVE , creating Design tool bar");
+			pOut->PrintMessage("Action: Save , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case PICK_BY_FIGURE:
-			pOut->PrintMessage("Action: PICK_BY_FIGURE , creating Design tool bar");
+			pOut->PrintMessage("Action: Pick by Figure , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 			
 		case PICK_BY_COLOR:
-			pOut->PrintMessage("Action: PICK_BY_COLOR , creating Design tool bar");
+			pOut->PrintMessage("Action: Pick by Color , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case BOTH:
-			pOut->PrintMessage("Action: both , creating Design tool bar");
+			pOut->PrintMessage("Action: Both , Click anywhere");
 			PlaySound("sound effects\\select.wav", NULL, SND_ASYNC);
 			
 			break;
 
 		case SWITCH_TO_DRAW:
-			pOut->PrintMessage("Action: SWITCH_TO_DRAW , creating Design tool bar");
+			pOut->PrintMessage("Action: Switch to Draw Mode , Click anywhere");
 			pOut->CreateDrawToolBar();
 			PlaySound("sound effects\\playmode.wav", NULL, SND_ASYNC);
 			break;

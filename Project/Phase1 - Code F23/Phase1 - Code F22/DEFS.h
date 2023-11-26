@@ -13,7 +13,6 @@ enum ActionType //The actions supported (you can add more if needed)
 	DRAW_HEXOGONAL,
 	SELECT,
 	MOVE,
-	COLOR,
 	BORDER,
 	FILL,
 	REC,

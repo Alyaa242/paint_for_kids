@@ -14,14 +14,14 @@ Output::Output()
 	
 	UI.StatusBarHeight = 50;
 	UI.ToolBarHeight = 50;
-	UI.MenuItemWidth = 45;
+	UI.MenuItemWidth = 47;
 	
 	UI.DrawColor = BLUE;	//Drawing color
 	UI.FillColor = GREEN;	//Filling color
-	UI.MsgColor = RED;		//Messages color
-	UI.BkGrndColor = LIGHTGOLDENRODYELLOW;	//Background color
+	UI.MsgColor = WHITE;		//Messages color
+	UI.BkGrndColor = color(252, 224, 224);	//Background color
 	UI.HighlightColor = MAGENTA;	//This color should NOT be used to draw figures. use if for highlight only
-	UI.StatusBarColor = TURQUOISE;
+	UI.StatusBarColor = color(53, 80, 130);
 	UI.PenWidth = 3;	//width of the figures frames
 
 	
@@ -60,7 +60,7 @@ window* Output::CreateWind(int w, int h, int x, int y) const
 void Output::Opening() const
 {
 	pWind->DrawRectangle(0, 0, UI.width, UI.height);
-	pWind->DrawImage("images\\waving_kid.jpg", 0, 0,UI.width ,UI.height);
+	pWind->DrawImage("images\\openning.jpg", 0, 0,UI.width ,UI.height);
 	PlaySound("sound effects\\greeting.wav", NULL, SND_SYNC);
 	ClearDrawArea();
 
@@ -99,7 +99,6 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_HEX] = "images\\MenuItems\\hexagon.jpg";
 	MenuItemImages[ITM_SELECT] = "images\\MenuItems\\cursorg.jpg";
 	MenuItemImages[ITM_MOVE] = "images\\MenuItems\\move.jpg";
-	MenuItemImages[ITM_COLOR] = "images\\MenuItems\\art.jpg";
 	MenuItemImages[ITM_BORDER] = "images\\MenuItems\\bordersg.jpg";
 	MenuItemImages[ITM_FILL] = "images\\MenuItems\\bucketg.jpg";
 	MenuItemImages[ITM_REC] = "images\\MenuItems\\record.jpg";
@@ -115,7 +114,7 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_BLUE] = "images\\MenuItems\\blue2.jpg";
 	MenuItemImages[ITM_YELLOW] = "images\\MenuItems\\yellow2.jpg";
 	MenuItemImages[ITM_ORANGE] = "images\\MenuItems\\orange2.jpg";
-	MenuItemImages[ITM_SWITCH] = "images\\MenuItems\\playmode3g.jpg";
+	MenuItemImages[ITM_SWITCH] = "images\\MenuItems\\playmode5.jpg";
 	MenuItemImages[ITM_LOAD] = "images\\MenuItems\\loadg.jpg";
 	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\saveg.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\exitg.jpg";
@@ -130,7 +129,7 @@ void Output::CreateDrawToolBar() const
 
 
 	//Draw a line under the toolbar
-	pWind->SetPen(BLUE, 5);
+	pWind->SetPen(color(53, 80, 130), 5);
 	pWind->DrawLine(0, UI.ToolBarHeight+space, UI.width, UI.ToolBarHeight+space);	
 
 }
@@ -144,7 +143,7 @@ void Output::CreatePlayToolBar() const
 	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
 	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
 	MenuItemImages2[ITM_BOTH] = "images\\MenuItems\\both.jpeg";
-	MenuItemImages2[ITM_SWITCH_TO_DRAW] = "images\\MenuItems\\Menu_SWITCH.jpg";
+	MenuItemImages2[ITM_SWITCH_TO_DRAW] = "images\\MenuItems\\drawmode2.jpg";
 
 	pWind->SetPen(WHITE, 1);
 	pWind->SetBrush(WHITE);
@@ -175,7 +174,7 @@ void Output::PrintMessage(string msg) const	//Prints a message on status bar
 	
 	pWind->SetPen(UI.MsgColor, 50);
 	pWind->SetFont(20, BOLD , BY_NAME, "Arial");   
-	pWind->DrawString(10, UI.height - (int)(UI.StatusBarHeight/1.5), msg);
+	pWind->DrawString(10, UI.height - (int)(UI.StatusBarHeight/1.25), msg);
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
