@@ -108,15 +108,25 @@ ActionType Input::GetUserAction() const
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 
 			}
-		}
 
+		}
+		/*user clicks on playmode area*/
+
+		if (y >= UI.ToolBarHeight && y < UI.height - UI.StatusBarHeight)
+		{
+			return PLAYING_AREA;
+		}/*++++++++++++++++++++++++++*/
+
+		//[3] User clicks on the status bar
+		return STATUS;/*+++++++++++++++++++++++++++++++++*/
+	
 
 
 
 			///TODO:
 			//perform checks similar to Draw mode checks above
 			//and return the correspoding action
-			return TO_PLAY;	//just for now. This should be updated
+	         return TO_PLAY;	//just for now. This should be updated
 		}
 
 }

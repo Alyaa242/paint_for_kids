@@ -492,7 +492,8 @@ int main()
 			PlaySound("sound effects\\playmode.wav", NULL, SND_ASYNC);
 			break;
 
-
+		case PLAYING_AREA:
+			pOut->PrintMessage("Action : a click on play mode area, Click any where"); /*+++++*/
 
 
 
