@@ -105,7 +105,7 @@ ActionType Input::GetUserAction() const
 			case 2*ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
 			case 2*ITM_BOTH: return BOTH;
 			case 2*ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;
-
+			default: return EMPTY;	//A click on empty place in desgin toolbar
 
 			}
 		}
