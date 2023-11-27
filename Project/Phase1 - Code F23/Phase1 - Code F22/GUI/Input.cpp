@@ -101,10 +101,10 @@ ActionType Input::GetUserAction() const
 			//if division result is 0 ==> first item is clicked, if 1 ==> 2nd item and so on
 
 			switch (ClickedItemOrder) {
-			case ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;
-			case ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
-			case ITM_BOTH: return BOTH;
-			case ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;
+			case 2*ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;
+			case 2*ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
+			case 2*ITM_BOTH: return BOTH;
+			case 2*ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;
 
 
 			}

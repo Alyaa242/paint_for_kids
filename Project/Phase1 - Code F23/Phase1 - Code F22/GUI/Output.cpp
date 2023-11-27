@@ -140,9 +140,9 @@ void Output::CreatePlayToolBar() const
 	UI.InterfaceMode = MODE_PLAY;
 
 	string MenuItemImages2[PLAY_ITM_COUNT];
-	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Menu_FIGURE2.jpg";
+	MenuItemImages2[ITM_PICK_BY_FIGURE] = "images\\MenuItems\\Figure.jpg";
 	MenuItemImages2[ITM_PICK_BY_COLOR] = "images\\MenuItems\\Menu_COLOR.jpg";
-	MenuItemImages2[ITM_BOTH] = "images\\MenuItems\\both.jpeg";
+	MenuItemImages2[ITM_BOTH] = "images\\MenuItems\\Both.jpg";
 	MenuItemImages2[ITM_SWITCH_TO_DRAW] = "images\\MenuItems\\drawmode2.jpg";
 
 	pWind->SetPen(WHITE, 1);
@@ -152,7 +152,7 @@ void Output::CreatePlayToolBar() const
 	pWind->DrawLine(0, UI.ToolBarHeight+10, UI.width, UI.ToolBarHeight+10);
 	
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
-		pWind->DrawImage(MenuItemImages2[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
+		pWind->DrawImage(MenuItemImages2[i], i *2* UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 
 	///TODO: write code to create Play mode menu
 }
