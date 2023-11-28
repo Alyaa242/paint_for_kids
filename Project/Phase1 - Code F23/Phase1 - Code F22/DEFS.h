@@ -6,7 +6,9 @@
 //This file contains some global constants and definitions to be used in the project.
 enum ActionType //The actions supported (you can add more if needed)
 {
-	DRAW_RECTANGLE,//Draw Rectangle
+	DRAW_RECTANGLE,	//Draw Rectangle
+
+	///TODO: Add the other action types of the two modes
 	DRAW_SQARE,
 	DRAW_TRIANGLE,
 	DRAW_CIRCLE,
@@ -43,7 +45,6 @@ enum ActionType //The actions supported (you can add more if needed)
 	PLAYING_AREA,
 	STATUS			//A click on the status bar
 
-	///TODO: Add the other action types of the two modes
 };
 
 struct Point	//To be used for figures points

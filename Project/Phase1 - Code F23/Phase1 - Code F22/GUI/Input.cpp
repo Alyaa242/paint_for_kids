@@ -9,7 +9,7 @@ Input::Input(window* pW)
 
 void Input::GetPointClicked(int &x, int &y) const
 {
-	pWind->FlushMouseQueue();//not to skip the message
+	pWind->FlushMouseQueue();	//not to skip the message
 	pWind->FlushKeyQueue();
 	pWind->WaitMouseClick(x, y);	//Wait for mouse click
 }
@@ -21,7 +21,7 @@ string Input::GetSrting(Output *pO) const
 	while(1)
 	{
 		pWind->WaitKeyPress(Key);
-		if(Key == 27 )//ESCAPE key is pressed
+		if(Key == 27 )	//ESCAPE key is pressed
 			return "";	//returns nothing as user has cancelled label
 		if(Key == 13 )	//ENTER key is pressed
 			
@@ -47,7 +47,7 @@ ActionType Input::GetUserAction() const
 		//[1] If user clicks on the Toolbar
 		if ( y >= 0 && y < UI.ToolBarHeight)
 		{	
-			//Check whick Menu item was clicked
+			//Check which Menu item was clicked
 			//==> This assumes that menu items are lined up horizontally <==
 			int ClickedItemOrder = (x / UI.MenuItemWidth);
 			//Divide x coord of the point clicked by the menu item width (int division)
@@ -104,6 +104,9 @@ ActionType Input::GetUserAction() const
 			//Divide x coord of the point clicked by the menu item width (int division)
 			//if division result is 0 ==> first item is clicked, if 1 ==> 2nd item and so on
 
+				///TODO:
+			//perform checks similar to Draw mode checks above
+			//and return the correspoding action
 			switch (ClickedItemOrder) {
 			case 2*ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;
 			case 2*ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
@@ -119,18 +122,10 @@ ActionType Input::GetUserAction() const
 		if (y >= UI.ToolBarHeight && y < UI.height - UI.StatusBarHeight)
 		{
 			return PLAYING_AREA;
-		}/*++++++++++++++++++++++++++*/
+		}
 
 		//[3] User clicks on the status bar
-		return STATUS;/*+++++++++++++++++++++++++++++++++*/
-	
-
-
-
-			///TODO:
-			//perform checks similar to Draw mode checks above
-			//and return the correspoding action
-	         return TO_PLAY;	//just for now. This should be updated
+		return STATUS;		
 		}
 
 }

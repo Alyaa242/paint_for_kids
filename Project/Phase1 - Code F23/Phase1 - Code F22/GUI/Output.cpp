@@ -21,7 +21,7 @@ Output::Output()
 	UI.MsgColor = WHITE;		//Messages color
 	UI.BkGrndColor = color(252, 224, 224);	//Background color
 	UI.HighlightColor = MAGENTA;	//This color should NOT be used to draw figures. use if for highlight only
-	UI.StatusBarColor = color(53, 80, 130);
+	UI.StatusBarColor = color(53, 80, 130);		//Status bar color
 	UI.PenWidth = 3;	//width of the figures frames
 
 	
@@ -30,7 +30,7 @@ Output::Output()
 	//Change the title
 	pWind->ChangeTitle("Paint for Kids - Programming Techniques Project");
 
-	Opening();//opening window
+	Opening();	//opening window
 	
 	CreateDrawToolBar();
 	CreateStatusBar();
@@ -59,9 +59,9 @@ window* Output::CreateWind(int w, int h, int x, int y) const
 //////////////////////////////////////////////////////////////////////////////////////////
 void Output::Opening() const
 {
-	pWind->DrawRectangle(0, 0, UI.width, UI.height);
-	pWind->DrawImage("images\\openning.jpg", 0, 0,UI.width ,UI.height);
-	PlaySound("sound effects\\greeting.wav", NULL, SND_SYNC);
+	pWind->DrawRectangle(0, 0, UI.width, UI.height);	//Create opening window by drawing a rectangle
+	pWind->DrawImage("images\\openning.jpg", 0, 0,UI.width ,UI.height);		//Add image to opening
+	PlaySound("sound effects\\greeting.wav", NULL, SND_SYNC);	//Add sound to opening
 	ClearDrawArea();
 
 }
@@ -91,7 +91,11 @@ void Output::CreateDrawToolBar() const
 	//First prepare List of images for each menu item
 	//To control the order of these images in the menu, 
 	//reoder them in UI_Info.h ==> enum DrawMenuItem
+	
 	string MenuItemImages[DRAW_ITM_COUNT];
+
+	//TODO: Prepare images for each menu item and add it to the list
+
 	MenuItemImages[ITM_RECT] = "images\\MenuItems\\rect.jpg";
 	MenuItemImages[ITM_SQR] = "images\\MenuItems\\square.jpg";
 	MenuItemImages[ITM_TRI] = "images\\MenuItems\\triangle.jpg";
@@ -119,9 +123,6 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\saveg.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\exitg.jpg";
 
-	
-	//TODO: Prepare images for each menu item and add it to the list
-
 	//Draw menu item one image at a time
 	for(int i=0; i<DRAW_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages[i], i*UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
@@ -137,6 +138,8 @@ void Output::CreateDrawToolBar() const
 
 void Output::CreatePlayToolBar() const
 {
+	///TODO: write code to create Play mode menu
+
 	UI.InterfaceMode = MODE_PLAY;
 
 	string MenuItemImages2[PLAY_ITM_COUNT];
@@ -148,13 +151,12 @@ void Output::CreatePlayToolBar() const
 	pWind->SetPen(WHITE, 1);
 	pWind->SetBrush(WHITE);
 	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
-	pWind->SetPen(BLUE, 5);
+	pWind->SetPen(color(53, 80, 130), 5);
 	pWind->DrawLine(0, UI.ToolBarHeight+10, UI.width, UI.ToolBarHeight+10);
 	
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages2[i], i *2* UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 
-	///TODO: write code to create Play mode menu
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -193,6 +195,7 @@ int Output::getCrntPenWidth() const		//get current pen width
 //								Figures Drawing Functions								//
 //======================================================================================//
 
+//Draw rectangle function
 void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) const
 {
 	color DrawingClr;
@@ -218,11 +221,9 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 
 
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
-
-	
-
 }
 
+//Draw square function
 void Output::DrawSquare(Point p, GfxInfo SquareGfxInfo, bool selected)const
 {
 	color DrawingClr;
@@ -244,8 +245,9 @@ void Output::DrawSquare(Point p, GfxInfo SquareGfxInfo, bool selected)const
 	if (p.y < UI.ToolBarHeight + 13 + HalfsideLenght )
 		p.y = UI.ToolBarHeight + 13 + HalfsideLenght ;
 	pWind->DrawRectangle(p.x - HalfsideLenght, p.y - HalfsideLenght, p.x + HalfsideLenght, p.y + HalfsideLenght, style);
-
 }
+
+//Draw triangle function
 void Output::DrawTriangle(Point p1, Point p2, Point p3, GfxInfo TriangleGfxInfo, bool selected)const
 {
 	color DrawingClr;
@@ -272,6 +274,7 @@ void Output::DrawTriangle(Point p1, Point p2, Point p3, GfxInfo TriangleGfxInfo,
 	pWind->DrawTriangle(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, style);
 }
 
+//Draw hexagon function
 void Output::DrawHexagon(Point p, GfxInfo HexagonGfxInfo, bool selected)const
 {
 	const int vertices = 6;
@@ -300,6 +303,8 @@ void Output::DrawHexagon(Point p, GfxInfo HexagonGfxInfo, bool selected)const
 	pWind->DrawPolygon(xvalues, yvalues, vertices, style);
 
 }
+
+//Draw circle function
 void Output::DrawCircle(Point Pc, Point P, GfxInfo CircleGfxInfo, bool selected)const
 {
 	if (P.y < UI.ToolBarHeight + 13)
@@ -332,6 +337,7 @@ void Output::DrawCircle(Point Pc, Point P, GfxInfo CircleGfxInfo, bool selected)
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
+
 Output::~Output()
 {
 	delete pWind;

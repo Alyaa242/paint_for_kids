@@ -266,19 +266,16 @@ int main()
 	pIn->GetPointClicked(x,y);	//Wait for any click
 	
 	pOut->PrintMessage("Testing Input ability to read strings");
-	string s = (pIn->GetSrting(pOut));//the string which cary the user`s string
-	
-	
-	pOut->ClearStatusBar();//clearing status bat
 
-	
-
-	pOut->PrintMessage("You entered  " + s);
-
-	///TODO: Add code here to 
+	///TODO: Add code here to S
 	// 1- Read a string from the user on the status bar
+	string s = (pIn->GetSrting(pOut));	//The string which cary the user's string
+
 	// 2- After reading the string clear the status bar
+	pOut->ClearStatusBar();		//Clear status bar
+
 	// 3- print on the status bar "You Entered" then print the string
+	pOut->PrintMessage("You entered: " + s);
 
 	pIn->GetPointClicked(x,y);	//Wait for any click
 	pOut->ClearDrawArea();
@@ -304,22 +301,14 @@ int main()
 				pOut->PrintMessage("Action: a click on the Status Bar, Click anywhere");
 				break;
  
+		///TODO: Add more cases for the other action types
+
 		case DRAWING_AREA:
 				pOut->PrintMessage("Action: a click on the Drawing Area, Click anywhere");
 				break;
 
 		case EMPTY:
 				pOut->PrintMessage("Action: a click on empty area in the Design Tool Bar, Click anywhere");
-				break;
-
-		case TO_DRAW:
-				pOut->PrintMessage("Action: Switch to Draw Mode, creating simualtion tool bar");
-				
-				break;
-
-		case TO_PLAY:
-				pOut->PrintMessage("Action: Switch to Play Mode, creating Design tool bar");
-				PlaySound("sound effects\\playmode.wav", NULL, SND_ASYNC);
 				break;
 
 		case DRAW_RECTANGLE:
@@ -497,18 +486,11 @@ int main()
 		case SWITCH_TO_DRAW:
 			pOut->PrintMessage("Action: Switch to Draw Mode , Click anywhere");
 			pOut->CreateDrawToolBar();
-			PlaySound("sound effects\\playmode.wav", NULL, SND_ASYNC);
+			PlaySound("sound effects\\playmode.wav", NULL, SND_ASYNC);	
 			break;
 
 		case PLAYING_AREA:
-			pOut->PrintMessage("Action : a click on play mode area, Click any where"); 
-
-
-
-
-
-		///TODO: Add more cases for the other action types
-
+			pOut->PrintMessage("Action : a click on play mode area, Click anywhere"); 
 
 		case EXIT:				
 				break;

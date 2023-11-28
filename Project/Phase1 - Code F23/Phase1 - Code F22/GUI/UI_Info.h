@@ -54,11 +54,11 @@ enum PlayMenuItem //The items of the Play menu (you should add more items)
 	//If you want to change the menu items order, change the order here
 
 	ITM_PICK_BY_FIGURE,
+
+	//TODO: Add more items names here
 	ITM_PICK_BY_COLOR,
 	ITM_BOTH,
 	ITM_SWITCH_TO_DRAW,
-
-	//TODO: Add more items names here
 
 	PLAY_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 	
