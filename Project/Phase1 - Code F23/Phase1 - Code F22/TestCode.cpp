@@ -266,7 +266,15 @@ int main()
 	pIn->GetPointClicked(x,y);	//Wait for any click
 	
 	pOut->PrintMessage("Testing Input ability to read strings");
-	pIn->GetSrting(pOut);
+	string s = (pIn->GetSrting(pOut));//the string which cary the user`s string
+	
+	
+	pOut->ClearStatusBar();//clearing status bat
+
+	
+
+	pOut->PrintMessage("You entered  " + s);
+
 	///TODO: Add code here to 
 	// 1- Read a string from the user on the status bar
 	// 2- After reading the string clear the status bar
@@ -493,7 +501,7 @@ int main()
 			break;
 
 		case PLAYING_AREA:
-			pOut->PrintMessage("Action : a click on play mode area, Click any where"); /*+++++*/
+			pOut->PrintMessage("Action : a click on play mode area, Click any where"); 
 
 
 
