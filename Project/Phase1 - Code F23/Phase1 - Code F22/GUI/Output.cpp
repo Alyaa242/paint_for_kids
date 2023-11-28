@@ -156,7 +156,7 @@ void Output::CreatePlayToolBar() const
 
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages2[i], i *2* UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
-	/* second term (i * UI.MenuItemWidth) was multiblied by 2 to make icons spaced apart  */   
+	// second term (i * UI.MenuItemWidth) was multiblied by 2 to make icons spaced apart
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
