@@ -108,10 +108,10 @@ ActionType Input::GetUserAction() const
 			//perform checks similar to Draw mode checks above
 			//and return the correspoding action
 			switch (ClickedItemOrder) {
-			case 2*ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;
-			case 2*ITM_PICK_BY_COLOR: return PICK_BY_COLOR;
-			case 2*ITM_BOTH: return BOTH;
-			case 2*ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;
+			case 2*ITM_PICK_BY_FIGURE: return PICK_BY_FIGURE;/*A click on pick by figure icon ,  (ITM_PICK_BY_FIGURE) was multiblied by 2 to make click action fit with edit in (line 158 in output.cpp)*/
+			case 2*ITM_PICK_BY_COLOR: return PICK_BY_COLOR;/*A click on pick by color icon ,  (ITM_PICK_BY_COLOR) was multiblied by 2 to make click action fit with edit in (line 158 in output.cpp)*/
+			case 2*ITM_BOTH: return BOTH; /*A click on pick by both icon ,  (ITM_BOTH) was multiblied by 2 to make click action fit with edit in (line 158 in output.cpp)*/
+			case 2*ITM_SWITCH_TO_DRAW: return SWITCH_TO_DRAW;/*A click on switch to draw mode icon ,  (ITM_SWITCH_TO_DRAW) was multiblied by 2 to make click action fit with edit in (line 158 in output.cpp)*/
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 
 			}

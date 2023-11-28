@@ -153,10 +153,10 @@ void Output::CreatePlayToolBar() const
 	pWind->DrawRectangle(0, 0, UI.width, UI.ToolBarHeight);
 	pWind->SetPen(color(53, 80, 130), 5);
 	pWind->DrawLine(0, UI.ToolBarHeight+10, UI.width, UI.ToolBarHeight+10);
-	
+
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages2[i], i *2* UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
-
+	/* second term (i * UI.MenuItemWidth) was multiblied by 2 to make icons spaced apart  */   
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
