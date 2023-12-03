@@ -1,5 +1,10 @@
 #include "ApplicationManager.h"
+
 #include "Actions\AddRectAction.h"
+#include "Actions\AddSqAction.h"
+#include "Actions\AddTriAction.h"
+#include "Actions\AddHexAction.h"
+#include "Actions\AddCircAction.h"
 
 
 //Constructor
@@ -33,9 +38,22 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 	//According to Action Type, create the corresponding action object
 	switch (ActType)
 	{
-		case DRAW_RECT:
+		case DRAW_RECTANGLE:
 			pAct = new AddRectAction(this);
 			break;
+		case DRAW_SQARE:
+			pAct = new AddSqAction(this);
+			break;
+		case DRAW_TRIANGLE:
+			pAct = new AddTriAction(this);
+			break;
+
+		case DRAW_CIRCLE:
+			pAct = new AddCircAction(this);
+			break;
+
+		case DRAW_HEXOGONAL:
+			pAct = new AddHexAction(this);
 
 		case EXIT:
 			///create ExitAction here
@@ -83,6 +101,7 @@ CFigure *ApplicationManager::GetFigure(int x, int y) const
 //Draw all figures on the user interface
 void ApplicationManager::UpdateInterface() const
 {	
+	//clear drawing area
 	for(int i=0; i<FigCount; i++)
 		FigList[i]->Draw(pOut);		//Call Draw function (virtual member fn)
 }
