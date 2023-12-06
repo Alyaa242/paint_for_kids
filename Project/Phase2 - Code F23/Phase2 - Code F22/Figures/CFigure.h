@@ -25,6 +25,8 @@ public:
 	void ChngDrawClr(color Dclr);	//changes the figure's drawing color
 	void ChngFillClr(color Fclr);	//changes the figure's filling color
 
+	
+	 virtual bool is_in(int ,int)=0;
 	///The following functions should be supported by the figure class
 	///It should be overridden by each inherited figure
 
@@ -35,6 +37,7 @@ public:
 	//virtual void Load(ifstream &Infile) = 0;	//Load the figure parameters to the file
 
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
+	 virtual void PrintInfo(Output* pOut,bool) = 0;
 };
 
 #endif

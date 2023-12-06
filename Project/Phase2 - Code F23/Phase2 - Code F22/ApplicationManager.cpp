@@ -1,5 +1,5 @@
 #include "ApplicationManager.h"
-
+#include "Actions\Select.h"
 #include "Actions\AddRectAction.h"
 #include "Actions\AddSqAction.h"
 #include "Actions\AddTriAction.h"
@@ -54,7 +54,10 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 
 		case DRAW_HEXOGONAL:
 			pAct = new AddHexAction(this);
-
+			break;
+		case SELECT:
+			pAct = new Select(this);
+			break;
 		case EXIT:
 			///create ExitAction here
 			
@@ -87,12 +90,35 @@ CFigure *ApplicationManager::GetFigure(int x, int y) const
 {
 	//If a figure is found return a pointer to it.
 	//if this point (x,y) does not belong to any figure return NULL
-
-
+	bool flag = true;
+	for (int i = 0; i < FigCount; i++)
+	{
+		if (FigList[i] != NULL)
+		{
+			if (FigList[i]->is_in(x, y))
+			{
+				return FigList[i];
+				flag = false;
+				break;
+			}
+		}
+	}
 	//Add your code here to search for a figure given a point x,y	
 	//Remember that ApplicationManager only calls functions do NOT implement it.
-
+	if  (flag)
 	return NULL;
+}
+CFigure* ApplicationManager::GetLatestFig()
+{
+	bool flag = true;
+	for (int i = 0; i < FigCount; i++)
+		if (FigList[i] != NULL)
+			if (FigList[i]->IsSelected())
+			{
+				return FigList[i]; break;  flag = false;
+			}
+	if (flag)
+		return NULL;
 }
 //==================================================================================//
 //							Interface Management Functions							//
