@@ -23,7 +23,7 @@ Output::Output()
 	UI.HighlightColor = MAGENTA;	//This color should NOT be used to draw figures. use if for highlight only
 	UI.StatusBarColor = color(53, 80, 130);		//Status bar color
 	UI.PenWidth = 3;	//width of the figures frames
-
+	UI.isFillChanged = false;
 	
 	//Create the output window
 	pWind = CreateWind(UI.width, UI.height, UI.wx, UI.wy);

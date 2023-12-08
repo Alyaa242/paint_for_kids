@@ -21,7 +21,7 @@ void AddCircAction::ReadActionParameters()
 	pOut->PrintMessage("New Circle: Click at edge");
 	pIn->GetPointClicked(P2.x, P2.y);
 
-	CircGfxInfo.isFilled = false; //dafault notfilled
+	CircGfxInfo.isFilled = UI.isFillChanged;	//Default is not filled if fill color is was not changed before
 	CircGfxInfo.DrawClr = pOut->getCrntDrawColor();
 	CircGfxInfo.FillClr = pOut->getCrntFillColor();
 

@@ -17,7 +17,7 @@ void AddSqAction:: ReadActionParameters()
 	pOut->PrintMessage("New Square: Click at center");
 	pIn->GetPointClicked(P.x,P.y);
 
-	SqGfxInfo.isFilled = false;
+	SqGfxInfo.isFilled = UI.isFillChanged;	//Default is not filled if fill color is was not changed before
 	SqGfxInfo.DrawClr = pOut->getCrntDrawColor();
 	SqGfxInfo.FillClr = pOut->getCrntFillColor();
 

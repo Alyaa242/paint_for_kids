@@ -35,6 +35,11 @@ public:
 	//virtual void Load(ifstream &Infile) = 0;	//Load the figure parameters to the file
 
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
+<<<<<<< Updated upstream
+=======
+	 virtual void PrintInfo(Output* pOut,bool) = 0;
+
+>>>>>>> Stashed changes
 };
 
 #endif

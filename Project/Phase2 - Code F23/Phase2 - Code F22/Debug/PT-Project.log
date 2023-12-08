@@ -1,6 +1,16 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+<<<<<<< Updated upstream
   ApplicationManager.cpp
   AddHexAction.cpp
   Generating Code...
 AddCircAction.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   PT-Project.vcxproj -> D:\paint_for_kids\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
+=======
+  AddTriAction.cpp
+  AddSqAction.cpp
+  AddRectAction.cpp
+  AddHexAction.cpp
+  AddCircAction.cpp
+  Generating Code...
+  PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
+>>>>>>> Stashed changes

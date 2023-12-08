@@ -18,7 +18,7 @@ void AddHexAction::ReadActionParameters()
 	pOut->PrintMessage("New Hexagon: Click at center");
 	pIn->GetPointClicked(P.x, P.y);
 
-	HexGfxInfo.isFilled = false; //default notfilled
+	HexGfxInfo.isFilled = UI.isFillChanged;	//Default is not filled if fill color is was not changed before
 	HexGfxInfo.DrawClr = pOut->getCrntDrawColor();
 	HexGfxInfo.FillClr = pOut->getCrntFillColor();
 

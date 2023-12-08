@@ -5,6 +5,8 @@
 #include "Actions\AddTriAction.h"
 #include "Actions\AddHexAction.h"
 #include "Actions\AddCircAction.h"
+#include "Actions/DrawColorAction.h"
+#include "Actions/FillColorAction.h"
 
 
 //Constructor
@@ -47,14 +49,25 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		case DRAW_TRIANGLE:
 			pAct = new AddTriAction(this);
 			break;
-
 		case DRAW_CIRCLE:
 			pAct = new AddCircAction(this);
 			break;
-
 		case DRAW_HEXOGONAL:
 			pAct = new AddHexAction(this);
+<<<<<<< Updated upstream
 
+=======
+			break;
+		case SELECT:
+			pAct = new Select(this);
+			break;
+		case BORDER:
+			pAct = new DrawColorAction(this);
+			break;
+		case FILL:
+			pAct = new FillColorAction(this);
+			break;
+>>>>>>> Stashed changes
 		case EXIT:
 			///create ExitAction here
 			
