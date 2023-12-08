@@ -1,4 +1,5 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+<<<<<<< Updated upstream
   jutils.c
   jquant2.c
   jquant1.c
@@ -38,3 +39,7 @@ D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code
   Generating Code...
 auxil.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
+=======
+  LoadAction.cpp
+  PT-Project.vcxproj -> D:\paint_for_kids\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
+>>>>>>> Stashed changes

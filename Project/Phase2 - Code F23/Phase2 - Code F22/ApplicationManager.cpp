@@ -1,6 +1,9 @@
 #include "ApplicationManager.h"
 #include "Actions\AddRectAction.h"
 
+#include "Actions\SaveAction.h"
+#include "Actions/LoadAction.h"
+
 
 //Constructor
 ApplicationManager::ApplicationManager()
@@ -36,6 +39,29 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		case DRAW_RECT:
 			pAct = new AddRectAction(this);
 			break;
+<<<<<<< Updated upstream
+=======
+		case DRAW_SQARE:
+			pAct = new AddSqAction(this);
+			break;
+		case DRAW_TRIANGLE:
+			pAct = new AddTriAction(this);
+			break;
+
+		case DRAW_CIRCLE:
+			pAct = new AddCircAction(this);
+			break;
+
+		case DRAW_HEXOGONAL:
+			pAct = new AddHexAction(this);
+			break;
+		case SAVE:
+			pAct = new SaveAction(this);
+			break;
+		case LOAD:
+			pAct = new LoadAction(this);
+			break;
+>>>>>>> Stashed changes
 
 		case EXIT:
 			///create ExitAction here
@@ -64,6 +90,12 @@ void ApplicationManager::AddFigure(CFigure* pFig)
 	if(FigCount < MaxFigCount )
 		FigList[FigCount++] = pFig;	
 }
+void ApplicationManager::SaveAll(ofstream& File)
+{
+	for (int i = 0; i < FigCount; i++)
+		FigList[i]->Save( File);
+		
+}
 ////////////////////////////////////////////////////////////////////////////////////
 CFigure *ApplicationManager::GetFigure(int x, int y) const
 {
@@ -85,6 +117,22 @@ void ApplicationManager::UpdateInterface() const
 {	
 	for(int i=0; i<FigCount; i++)
 		FigList[i]->Draw(pOut);		//Call Draw function (virtual member fn)
+}
+void ApplicationManager::ClearDrawArea()
+{
+	for (int i = 0; i < FigCount; i++)
+		delete FigList[i];
+	FigCount = 0;
+	pOut->ClearDrawArea();
+}
+int ApplicationManager::GetFigCount() const
+{
+
+	return FigCount;
+}
+void ApplicationManager::SetFigCount(int n)
+{
+	FigCount = n;
 }
 ////////////////////////////////////////////////////////////////////////////////////
 //Return a pointer to the input

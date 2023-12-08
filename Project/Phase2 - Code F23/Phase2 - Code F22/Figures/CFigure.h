@@ -1,5 +1,6 @@
 #ifndef CFIGURE_H
 #define CFIGURE_H
+#include <fstream>
 
 #include "..\defs.h"
 #include "..\GUI\Output.h"
@@ -16,12 +17,16 @@ protected:
 
 public:
 	CFigure(GfxInfo FigureGfxInfo);
+	CFigure();
 
 	void SetSelected(bool s);	//select/unselect the figure
 	bool IsSelected() const;	//check whether fig is selected
 
 	virtual void Draw(Output* pOut) const  = 0 ;		//Draw the figure
-	
+	virtual void Save(ofstream &OutFile) = 0;	//Save the figure parameters to the file
+	virtual void Load(ifstream &Infile) = 0;	//Load the figure parameters to the file
+	static string GetStrClr(color& clr);        //convert type color to string
+	static color  GetClrStr(string& str);       ////convert type string to color
 	void ChngDrawClr(color Dclr);	//changes the figure's drawing color
 	void ChngFillClr(color Fclr);	//changes the figure's filling color
 
@@ -31,8 +36,6 @@ public:
 	///Decide the parameters that you should pass to each function	
 
 
-	//virtual void Save(ofstream &OutFile) = 0;	//Save the figure parameters to the file
-	//virtual void Load(ifstream &Infile) = 0;	//Load the figure parameters to the file
 
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
 };

@@ -1,5 +1,7 @@
 #ifndef APPLICATION_MANAGER_H
 #define APPLICATION_MANAGER_H
+#include <iostream>
+#include <fstream>
 
 #include "DEFS.h"
 #include "Figures\CFigure.h"
@@ -31,13 +33,17 @@ public:
 	void ExecuteAction(ActionType) ; //Creates an action and executes it
 	
 	// -- Figures Management Functions
-	void AddFigure(CFigure* pFig);          //Adds a new figure to the FigList
+	void AddFigure(CFigure* pFig);  //Adds a new figure to the FigList
+	void SaveAll(ofstream& File);
 	CFigure *GetFigure(int x, int y) const; //Search for a figure given a point inside the figure
 		
 	// -- Interface Management Functions
 	Input *GetInput() const; //Return pointer to the input
 	Output *GetOutput() const; //Return pointer to the output
 	void UpdateInterface() const;	//Redraws all the drawing window	
+	void ClearDrawArea();
+	int GetFigCount()const;
+	void SetFigCount(int);
 };
 
 #endif
