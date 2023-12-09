@@ -1,15 +1,41 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.cpp
+  Output.cpp
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(128,64): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(128,40): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(158,69): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(158,44): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(283,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,38): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,38): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,75): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,75): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,108): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,108): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,145): warning C4838: conversion from 'double' to 'const int' requires a narrowing conversion
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(285,145): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Output.cpp(312,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Input.cpp
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Input.cpp(52,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\GUI\Input.cpp(103,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  CTriangle.cpp
+  CSquare.cpp
+  CRectangle.cpp
+  CHexagon.cpp
+  CFigure.cpp
+  CCircle.cpp
   ApplicationManager.cpp
   Select.cpp
   FillColorAction.cpp
+  DrawColorAction.cpp
   AddTriAction.cpp
   AddSqAction.cpp
   AddRectAction.cpp
   AddHexAction.cpp
   AddCircAction.cpp
   Generating Code...
-D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\ApplicationManager.cpp(116): warning C4715: 'ApplicationManager::GetFigure': not all control paths return a value
 D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\ApplicationManager.cpp(128): warning C4715: 'ApplicationManager::GetLatestFig': not all control paths return a value
-  Skipping... (no relevant changes detected)
-  DrawColorAction.cpp
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\ApplicationManager.cpp(116): warning C4715: 'ApplicationManager::GetFigure': not all control paths return a value
+  LINK : .\Debug\PT Project.exe not found or not built by the last incremental link; performing full link
+AddCircAction.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
