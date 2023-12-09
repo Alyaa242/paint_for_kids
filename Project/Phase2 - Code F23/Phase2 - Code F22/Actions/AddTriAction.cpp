@@ -24,7 +24,7 @@ void AddTriAction::ReadActionParameters()
 	pOut->PrintMessage("New Triangle: Click at third corner");
 	pIn->GetPointClicked(P3.x, P3.y);
 
-	TriGfxInfo.isFilled = false; //default notfilled
+	TriGfxInfo.isFilled = UI.isFillChanged;	//Default is not filled if fill color is was not changed before
 
 	TriGfxInfo.DrawClr = pOut->getCrntDrawColor();
 	TriGfxInfo.FillClr = pOut->getCrntFillColor();

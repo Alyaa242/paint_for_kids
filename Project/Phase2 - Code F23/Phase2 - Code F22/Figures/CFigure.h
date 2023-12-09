@@ -38,6 +38,7 @@ public:
 
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
 	 virtual void PrintInfo(Output* pOut,bool) = 0;
+
 };
 
 #endif

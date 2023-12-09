@@ -87,7 +87,8 @@ struct UI_Info	//User Interface Info.
 	color MsgColor;			//Messages color
 	color BkGrndColor;		//Background color
 	color StatusBarColor;	//Status bar color
-	int PenWidth;			//width of the pen that draws shapes
+	int PenWidth;	//width of the pen that draws shapes
+	bool isFillChanged;
 
 	/// Add more members if needed
 	

@@ -1,3 +1,15 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  ApplicationManager.cpp
   Select.cpp
-  PT-Project.vcxproj -> C:\Users\shefo\Documents\GitHub\paint_for_kids\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
+  FillColorAction.cpp
+  AddTriAction.cpp
+  AddSqAction.cpp
+  AddRectAction.cpp
+  AddHexAction.cpp
+  AddCircAction.cpp
+  Generating Code...
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\ApplicationManager.cpp(116): warning C4715: 'ApplicationManager::GetFigure': not all control paths return a value
+D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\ApplicationManager.cpp(128): warning C4715: 'ApplicationManager::GetLatestFig': not all control paths return a value
+  Skipping... (no relevant changes detected)
+  DrawColorAction.cpp
+  PT-Project.vcxproj -> D:\Year one\Programming techniques\Paint\Project\Phase2 - Code F23\Phase2 - Code F22\Debug\PT Project.exe
